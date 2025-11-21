@@ -21,6 +21,8 @@ if [ -z "$PORT" ]; then\n\
   export PORT=8080\n\
 fi\n\
 # Modificar server.xml en tiempo de ejecución con el puerto correcto\n\
+# Primero restaurar si tiene ${PORT} literal, luego reemplazar 8080\n\
+sed -i "s/port=\"\\${PORT}\"/port=\"8080\"/g" /usr/local/tomcat/conf/server.xml\n\
 sed -i "s/port=\"8080\"/port=\"$PORT\"/g" /usr/local/tomcat/conf/server.xml\n\
 # Iniciar Tomcat\n\
 exec catalina.sh run' > /start.sh && chmod +x /start.sh
