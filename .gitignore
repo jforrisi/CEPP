@@ -1,7 +1,6 @@
 # Build outputs
 build/
-dist/
-*.war
+# dist/ - Necesitamos el WAR para Railway
 *.jar
 *.class
 
