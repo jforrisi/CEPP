@@ -1,0 +1,25 @@
+# Build outputs
+build/
+dist/
+*.war
+*.jar
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Configuración local (si contiene credenciales)
+CEPP.ini
+
