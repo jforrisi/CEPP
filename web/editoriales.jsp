@@ -16,8 +16,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Opiniones para enriquecer el debate público</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquí publicamos artículos y columnas de analistas, referentes políticos, sociales, económicos y empresariales sobre temas nacionales, regionales y globales. Cada editorial refleja exclusivamente la visión personal de su autor, contribuyendo a un debate plural y diverso.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Opiniones para enriquecer el debate pï¿½blico</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquï¿½ publicamos artï¿½culos y columnas de analistas, referentes polï¿½ticos, sociales, econï¿½micos y empresariales sobre temas nacionales, regionales y globales. Cada editorial refleja exclusivamente la visiï¿½n personal de su autor, contribuyendo a un debate plural y diverso.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1TjqMdbr4ArUYizkth1Of0uPvRnYdl_Xe/view" target="_blank">Andrés Silva - Hacia una política pública de "buen uso" de la IA en educación.</a>
+                                    <a href="https://drive.google.com/file/d/1TjqMdbr4ArUYizkth1Of0uPvRnYdl_Xe/view" target="_blank">Andrï¿½s Silva - Hacia una polï¿½tica pï¿½blica de "buen uso" de la IA en educaciï¿½n.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -55,7 +55,21 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NgMQSBf6awrLypRFU_kdqdShQWj40uC5/view" target="_blank">Germán Aguirrezabala - El departamento número 20.</a>
+                                    <a href="https://drive.google.com/file/d/1NgMQSBf6awrLypRFU_kdqdShQWj40uC5/view" target="_blank">Germï¿½n Aguirrezabala - El departamento nï¿½mero 20.</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
+                                    <img src="assets/editorial/manzi.jpeg" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1IfeLUtQynW9u1JD2upH4D1-KVDQvzjGZ/view" target="_blank">Martï¿½n Mattos - El riego como oportunidad para el paï¿½s.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -69,7 +83,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1Ieq6iKbzgDK2TtYFrCj_y5KhawjaX2BC/view" target="_blank">Martín Mattos - El riego como oportunidad para el país.</a>
+                                    <a href="https://drive.google.com/file/d/1Ieq6iKbzgDK2TtYFrCj_y5KhawjaX2BC/view" target="_blank">Martï¿½n Mattos - El riego como oportunidad para el paï¿½s.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -83,7 +97,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NdkuGKLTi7Cm8IXDpwLMQQv5HrsbleGi/view" target="_blank">Eliana González - La política uruguaya en redes sociales: Un desafío para la deliberación.</a>
+                                    <a href="https://drive.google.com/file/d/1NdkuGKLTi7Cm8IXDpwLMQQv5HrsbleGi/view" target="_blank">Eliana Gonzï¿½lez - La polï¿½tica uruguaya en redes sociales: Un desafï¿½o para la deliberaciï¿½n.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -97,7 +111,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: ¿Dónde estamos y qué hemos logrado?</a>
+                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: ï¿½Dï¿½nde estamos y quï¿½ hemos logrado?</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -111,7 +125,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1ojI4aJqo15tpFOA--DRKNqUZgBNBGj1N/view" target="_blank">A. Trenchi - Uruguay ante un sector energético cada vez más pragmático.</a>
+                                    <a href="https://drive.google.com/file/d/1ojI4aJqo15tpFOA--DRKNqUZgBNBGj1N/view" target="_blank">A. Trenchi - Uruguay ante un sector energï¿½tico cada vez mï¿½s pragmï¿½tico.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -125,7 +139,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1SONKcu1nrw_9D0umr5HEE8HClssznTdC/view" target="_blank">R. Rodriguez - Política de datos y bienestar: hacia un marco regulatorio de la eonocmía digital.</a>
+                                    <a href="https://drive.google.com/file/d/1SONKcu1nrw_9D0umr5HEE8HClssznTdC/view" target="_blank">R. Rodriguez - Polï¿½tica de datos y bienestar: hacia un marco regulatorio de la eonocmï¿½a digital.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -139,7 +153,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1BkFSLViVRbUVnkCmXuyrNAS3qkkXDW--/view" target="_blank">A. Stipanicic - Las patologías en el gobierno de las empresas públicas</a>
+                                    <a href="https://drive.google.com/file/d/1BkFSLViVRbUVnkCmXuyrNAS3qkkXDW--/view" target="_blank">A. Stipanicic - Las patologï¿½as en el gobierno de las empresas pï¿½blicas</a>
                                 </h3>                               
                             </div>
                         </article>

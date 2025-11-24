@@ -58,3 +58,4 @@ Railway → Producción (automático)
 
 **NUNCA subas a Railway sin verificar primero en Codespaces**
 
+
