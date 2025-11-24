@@ -1,3 +1,4 @@
+﻿<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : informes
     Created on : 03-sep-2025, 18:53:14
@@ -16,8 +17,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">An�lisis rigurosos para comprender la realidad</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secci�n encontrar�s nuestros estudios de coyuntura, investigaciones sectoriales y an�lisis sobre las principales pol�ticas p�blicas, programas y problem�ticas nacionales, siempre en di�logo con su contexto regional y global.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Análisis rigurosos para comprender la realidad</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta sección encontrarás nuestros estudios de coyuntura, investigaciones sectoriales y análisis sobre las principales políticas públicas, programas y problemáticas nacionales, siempre en diálogo con su contexto regional y global.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -86,7 +87,7 @@
                                           target="_blank" >INFORME ESPECIAL: PERSPECTIVAS ECONOMICAS DEL FMI</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>�Hacia d�nde va la econom�a?</p>                                    
+                                        <p>¿Hacia dónde va la economía?</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -124,7 +125,7 @@
                                           target="_blank" >INFORME SECTORIAL: MERCADO DE TRABAJO</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>An�lisis del mercado a septiembre 2025</p>                                    
+                                        <p>Análisis del mercado a septiembre 2025</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -143,7 +144,7 @@
                                           target="_blank" >INFORME SECTORIAL: PRINCIPALES COMMODITIES</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>An�lisis del mercado a agosto 2025</p>                                    
+                                        <p>Análisis del mercado a agosto 2025</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -161,7 +162,7 @@
                                       target="_blank" >INFORME SECTORIAL: SECTOR CARNICO</a>
                                 </h3>
                                 <div class="post-text">
-                                    <p>An�lisis del desempe�o sectorial a agosto 2025</p>                                    
+                                    <p>Análisis del desempeño sectorial a agosto 2025</p>                                    
                                 </div>
                             </div>
                         </article>
