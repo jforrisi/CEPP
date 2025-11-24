@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : formacion
     Created on : 23-sep-2025, 17:21:27
@@ -17,7 +18,7 @@
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
                                             <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Aprendizaje para transformar la realidad</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquí encontrarás nuestra oferta de cursos de formación, tanto los actuales como los ya realizados. Nos enfocamos en programas sobre políticas públicas, administración pública y pensamiento político y económico, con el objetivo de generar capacidades para la acción y el análisis crítico.</p>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquï¿½ encontrarï¿½s nuestra oferta de cursos de formaciï¿½n, tanto los actuales como los ya realizados. Nos enfocamos en programas sobre polï¿½ticas pï¿½blicas, administraciï¿½n pï¿½blica y pensamiento polï¿½tico y econï¿½mico, con el objetivo de generar capacidades para la acciï¿½n y el anï¿½lisis crï¿½tico.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -43,10 +44,10 @@
                                 <div class="postbox__text p-30">
                                     <h3 class="blog-title blog-title-sm">
                                         <a href="https://drive.google.com/file/d/1lHjhbN9pM5DvpQnaqFa7Y--JrjXKW7zi/view"
-                                          target="_blank" >DIPLOMADO EN: POLÍTICAS PÚBLICAS</a>
+                                          target="_blank" >DIPLOMADO EN: POLÃTICAS PÃšBLICAS</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>Analizando los desafíos de Uruguay</p>                                    
+                                        <p>Analizando los desafÃ­os de Uruguay</p>                                    
                                     </div>
                                 </div>
                         </article>

@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : editoriales
     Created on : 18-sep-2025, 19:32:41

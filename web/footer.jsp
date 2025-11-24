@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : footer.jsp
     Created on : 29-ago-2024, 19:36:27
@@ -77,7 +78,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-md-12">
                         <div class="footer-copyright">
-                            <p class="white-color" style="text-align: center">© 2024 Centro de políticas públicas. Todos los derechos reservados.</p>
+                            <p class="white-color" style="text-align: center">ï¿½ 2024 Centro de polï¿½ticas pï¿½blicas. Todos los derechos reservados.</p>
                         </div>
                     </div>
                 </div>

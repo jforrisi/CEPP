@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : contacto
     Created on : 02-sep-2024, 17:36:35
@@ -18,8 +19,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Conectá con el CEPP</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta sección encontrarás nuestras vías de comunicación: correo electrónico, suscripción a newsletters y otros canales para mantenerte al día con las novedades del centro. Un espacio abierto para estar en contacto e intercambiar ideas.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Conectï¿½ con el CEPP</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secciï¿½n encontrarï¿½s nuestras vï¿½as de comunicaciï¿½n: correo electrï¿½nico, suscripciï¿½n a newsletters y otros canales para mantenerte al dï¿½a con las novedades del centro. Un espacio abierto para estar en contacto e intercambiar ideas.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -56,7 +57,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-box phone-icon mb-30">
-                                        <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                                        <input type="text" name="phone" id="phone" placeholder="Telï¿½fono">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">

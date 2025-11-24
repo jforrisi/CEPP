@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : quienessomos
     Created on : 12-dic-2024, 15:38:01
@@ -8,7 +9,7 @@
 
  <section class="team-area gray-bg pt-80 pb-55">
             <div class="container ">
-               <h1 style="color: #79162E">¿Quiénes somos?</h1>
+               <h1 style="color: #79162E">ï¿½Quiï¿½nes somos?</h1>
                                 <div class="row justify-content-center">
                      <div class="col-xl-12 col-lg-12 ">
                          <div class="section-title text-center pos-rel mb-80" >
@@ -55,7 +56,7 @@
                                                 <img src="assets/equipo/foto_eduardo.png" style="max-width: 50%" alt="">
                                             </div>
                                             <div class="team-content">
-                                                <h3>Eduardo Rodríguez</h3>
+                                                <h3>Eduardo RodrÃ­guez</h3>
                                             </div>
                                             <div class="social-links">
                                                 <a href="https://www.linkedin.com/in/eduardo-rodr%C3%ADguez-4775396/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -94,7 +95,7 @@
                                                 <img src="assets/equipo/foto_santiago.png" style="max-width: 50%" alt="">
                                             </div>
                                             <div class="team-content">
-                                                <h3>Santiago García</h3>
+                                                <h3>Santiago GarcÃ­a da Rosa</h3>
                                             </div>
                                             <div class="social-links">
                                                 <a href="https://www.linkedin.com/in/santiago-garc%C3%ADa-da-rosa-703394328/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -119,7 +120,7 @@
                                                 <img src="assets/equipo/foto_german.png" style="max-width: 50%" alt="">
                                             </div>
                                             <div class="team-content">
-                                                <h3>Germán Barcala</h3>
+                                                <h3>Germï¿½n Barcala</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +134,7 @@
                      <div class="col-xl-12 col-lg-12 ">
                          <div class="section-title text-center pos-rel mb-80" >
                              <div class="section-text pos-rel" style="text-align: left">
-                                <h3>ASISTENTES DE INVESTIGACIÓN</h3>
+                                <h3>ASISTENTES DE INVESTIGACIï¿½N</h3>
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 col-md-4">
                                         <div class="team-box text-center mb-30">
@@ -141,7 +142,7 @@
                                                 <img src="assets/equipo/foto_salome.png" style="max-width: 50%" alt="">
                                             </div>
                                             <div class="team-content">
-                                                <h3>Salomé Miraldo</h3>
+                                                <h3>Salomï¿½ Miraldo</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -164,7 +165,7 @@
                      <div class="col-xl-12 col-lg-12 ">
                          <div class="section-title text-center pos-rel mb-80" >
                              <div class="section-text pos-rel" style="text-align: left">
-                                <h3>CONSEJO ACDÉMICO HONORARIO</h3>
+                                <h3>CONSEJO ACDï¿½MICO HONORARIO</h3>
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-4 col-md-4">
                                         <div class="team-box text-center mb-30">
@@ -182,7 +183,7 @@
                                                 <img src="assets/equipo/foto_adriana.png" style="max-width: 50%" alt="">
                                             </div>
                                             <div class="team-content">
-                                                <h3>Adriana Aristimuño</h3>
+                                                <h3>Adriana Aristimuï¿½o</h3>
                                             </div>
                                         </div>
                                     </div>

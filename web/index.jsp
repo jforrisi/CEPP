@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : index
     Created on : 26-ago-2024, 19:38:14
@@ -17,11 +18,11 @@
 <!--                                <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF"><span style="font-size: 50px"> Diploma en</span><br> POLÍTICAS PUBLICAS</h1>
-                                            <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Te invitamos a sumergirte en un análisis profundo de la realidad económica y social de Uruguay</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF"><span style="font-size: 50px"> Diploma en</span><br> POLï¿½TICAS PUBLICAS</h1>
+                                            <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Te invitamos a sumergirte en un anï¿½lisis profundo de la realidad econï¿½mica y social de Uruguay</p>
                                         </div>
                                         <div class="hero-slider-btn" >
-                                            <a data-animation="fadeInLeft" data-delay=".6s" href="diploma.jsp" class="bt-btn btn-h-white" style="background: #FFF; color:#79162E ">CONOCER MÁS > </a>
+                                            <a data-animation="fadeInLeft" data-delay=".6s" href="diploma.jsp" class="bt-btn btn-h-white" style="background: #FFF; color:#79162E ">CONOCER Mï¿½S > </a>
                                         </div>
                                     </div>
                                 </div>-->
@@ -41,18 +42,18 @@
                                 <h1 style="color: #FFF">El CEPP</h1>
                             </div>
                             <div class="about-text" >
-                                <p style="text-align: justify; color: #FFF">Somos el Centro de Estudios de Políticas Públicas, una fundación sin fines de 
-                                    lucro orientada al fortalecimiento del nivel de sus políticas públicas. 
-                                    Trabajamos con la convicción de que Uruguay necesita fortalecer la producción de 
+                                <p style="text-align: justify; color: #FFF">Somos el Centro de Estudios de Polï¿½ticas Pï¿½blicas, una fundaciï¿½n sin fines de 
+                                    lucro orientada al fortalecimiento del nivel de sus polï¿½ticas pï¿½blicas. 
+                                    Trabajamos con la convicciï¿½n de que Uruguay necesita fortalecer la producciï¿½n de 
                                     conocimiento riguroso y basado en evidencia para elevar la calidad y el impacto de 
-                                    sus políticas públicas.
+                                    sus polï¿½ticas pï¿½blicas.
                                 </p>
                                 <p style="text-align: justify; color: #FFF">
                                     Nacimos en 2018 como un proyecto impulsado por Ernesto Talvi, orientado a generar
-                                    insumos técnicos para potenciar las políticas públicas del Uruguay. 
-                                    Creemos fundamental abordar los grandes desafíos nacionales con una mirada 
-                                    profesional, evaluando qué funciona y qué no, aprendiendo tanto de la experiencia 
-                                    local como de las mejores prácticas internacionales.
+                                    insumos tï¿½cnicos para potenciar las polï¿½ticas pï¿½blicas del Uruguay. 
+                                    Creemos fundamental abordar los grandes desafï¿½os nacionales con una mirada 
+                                    profesional, evaluando quï¿½ funciona y quï¿½ no, aprendiendo tanto de la experiencia 
+                                    local como de las mejores prï¿½cticas internacionales.
 
                                 </p>
                                 <br>
@@ -69,10 +70,10 @@
                                         <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 125px; color: #FFF" ></i>
                                     </div>
                                     <div class="testi-author-desination-2">
-                                        <h4 style="color: #FFF">Nuestra misión</h4>
-                                        <p style="text-align: justify; color: #FFF">Promover el análisis, diseño e implementación de políticas públicas basadas 
+                                        <h4 style="color: #FFF">Nuestra misiï¿½n</h4>
+                                        <p style="text-align: justify; color: #FFF">Promover el anï¿½lisis, diseï¿½o e implementaciï¿½n de polï¿½ticas pï¿½blicas basadas 
                                             en evidencia, buscando generar un mayor impacto y eficiencia. 
-                                            Producir análisis de calidad para tomadores de decisión y ciudadanía, 
+                                            Producir anï¿½lisis de calidad para tomadores de decisiï¿½n y ciudadanï¿½a, 
                                             y contribuyendo al debate informado y plural.</p>
                                     </div>
                                 </div>
@@ -83,9 +84,9 @@
                                         <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 125px; color: #FFF"></i>
                                     </div>
                                     <div class="testi-author-desination-2">
-                                        <h4 style="color: #FFF">Nuestra visión</h4>
-                                        <p style="text-align: justify; color: #FFF">Contribuir a diseñar un Uruguay más justo, integrado, abierto al mundo 
-                                            y con políticas públicas cada vez más sofisticadas, para que más 
+                                        <h4 style="color: #FFF">Nuestra visiï¿½n</h4>
+                                        <p style="text-align: justify; color: #FFF">Contribuir a diseï¿½ar un Uruguay mï¿½s justo, integrado, abierto al mundo 
+                                            y con polï¿½ticas pï¿½blicas cada vez mï¿½s sofisticadas, para que mï¿½s 
                                             personas vivan mejor.</p>
                                     </div>
                                 </div>
@@ -97,9 +98,9 @@
                                     </div>
                                     <div class="testi-author-desination-2">
                                         <h4 style="color: #FFF">Nuestro enfoque</h4>
-                                        <p style="text-align: justify; color: #FFF">Promovemos políticas públicas basadas en evidencia y con impacto real 
-                                            en la agenda nacional. Acercamos este debate a la ciudadanía con un 
-                                            lenguaje claro y accesible, para que más personas comprendan, 
+                                        <p style="text-align: justify; color: #FFF">Promovemos polï¿½ticas pï¿½blicas basadas en evidencia y con impacto real 
+                                            en la agenda nacional. Acercamos este debate a la ciudadanï¿½a con un 
+                                            lenguaje claro y accesible, para que mï¿½s personas comprendan, 
                                             se involucren y aporten soluciones.</p>
                                     </div>
                                 </div>
@@ -148,7 +149,7 @@
                             <i class="fa fa-search icono" aria-hidden="true" style="color: #FFF"></i>
                             <br>
                             <br>
-                            La política pública basada en evidencia
+                            La polï¿½tica pï¿½blica basada en evidencia
                         </div>
 <!--                        <div class="single-brand" style="color: #FFF">
                             <img src="assets/slider/iconos_desarrollo sostenible.png" style="max-width: 150px;" alt="">
@@ -172,10 +173,10 @@
                                 </div>
                             </div>
                             <div class="download-area">
-                                <a class="download-box mb-20" href="assets/doc/Propuestas_2025-2030-CEPP.pdf" download="CEPP - Propuestas Programáticas 2025-2030.pdf">
+                                <a class="download-box mb-20" href="assets/doc/Propuestas_2025-2030-CEPP.pdf" download="CEPP - Propuestas Programï¿½ticas 2025-2030.pdf">
                                     <div class="single-download-inner">
                                         <img src="assets/icon/pdf.png" alt="">
-                                        <span>Propuestas Programáticas 2025-2030.pdf</span>
+                                        <span>Propuestas Programï¿½ticas 2025-2030.pdf</span>
                                         <span class="download-size">57KB</span>
                                     </div>
                                 </a>                                
@@ -194,7 +195,7 @@
                     <div class="col-xl-8">
                         <div class="about-title text-center mb-70">
                             <!--<h2>CREEMOS EN:</h2>-->
-                            <h5>Si querés conocer más sobre CEPP no dudes en contactarnos</h5>
+                            <h5>Si querï¿½s conocer mï¿½s sobre CEPP no dudes en contactarnos</h5>
 
                             <div class="hero-slider-btn" >
                                             <a data-animation="fadeInLeft" data-delay=".6s" href="contacto.jsp" class="bt-btn btn-h-white" style="background: #79162E; color:#FFF ">CONTACTO > </a>
