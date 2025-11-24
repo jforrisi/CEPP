@@ -42,18 +42,18 @@
                                 <h1 style="color: #FFF">El CEPP</h1>
                             </div>
                             <div class="about-text" >
-                                <p style="text-align: justify; color: #FFF">Somos el Centro de Estudios de Pol�ticas P�blicas, una fundaci�n sin fines de 
-                                    lucro orientada al fortalecimiento del nivel de sus pol�ticas p�blicas. 
-                                    Trabajamos con la convicci�n de que Uruguay necesita fortalecer la producci�n de 
+                                <p style="text-align: justify; color: #FFF">Somos el Centro de Estudios de Políticas Públicas, una fundación sin fines de 
+                                    lucro orientada al fortalecimiento del nivel de sus políticas públicas. 
+                                    Trabajamos con la convicción de que Uruguay necesita fortalecer la producción de 
                                     conocimiento riguroso y basado en evidencia para elevar la calidad y el impacto de 
-                                    sus pol�ticas p�blicas.
+                                    sus políticas públicas.
                                 </p>
                                 <p style="text-align: justify; color: #FFF">
                                     Nacimos en 2018 como un proyecto impulsado por Ernesto Talvi, orientado a generar
-                                    insumos t�cnicos para potenciar las pol�ticas p�blicas del Uruguay. 
-                                    Creemos fundamental abordar los grandes desaf�os nacionales con una mirada 
-                                    profesional, evaluando qu� funciona y qu� no, aprendiendo tanto de la experiencia 
-                                    local como de las mejores pr�cticas internacionales.
+                                    insumos técnicos para potenciar las políticas públicas del Uruguay. 
+                                    Creemos fundamental abordar los grandes desafíos nacionales con una mirada 
+                                    profesional, evaluando qué funciona y qué no, aprendiendo tanto de la experiencia 
+                                    local como de las mejores prácticas internacionales.
 
                                 </p>
                                 <br>
@@ -70,10 +70,10 @@
                                         <i class="fa fa-bullseye" aria-hidden="true" style="font-size: 125px; color: #FFF" ></i>
                                     </div>
                                     <div class="testi-author-desination-2">
-                                        <h4 style="color: #FFF">Nuestra misi�n</h4>
-                                        <p style="text-align: justify; color: #FFF">Promover el an�lisis, dise�o e implementaci�n de pol�ticas p�blicas basadas 
+                                        <h4 style="color: #FFF">Nuestra misión</h4>
+                                        <p style="text-align: justify; color: #FFF">Promover el análisis, diseño e implementación de políticas públicas basadas 
                                             en evidencia, buscando generar un mayor impacto y eficiencia. 
-                                            Producir an�lisis de calidad para tomadores de decisi�n y ciudadan�a, 
+                                            Producir análisis de calidad para tomadores de decisión y ciudadanía, 
                                             y contribuyendo al debate informado y plural.</p>
                                     </div>
                                 </div>
@@ -85,8 +85,8 @@
                                     </div>
                                     <div class="testi-author-desination-2">
                                         <h4 style="color: #FFF">Nuestra visi�n</h4>
-                                        <p style="text-align: justify; color: #FFF">Contribuir a dise�ar un Uruguay m�s justo, integrado, abierto al mundo 
-                                            y con pol�ticas p�blicas cada vez m�s sofisticadas, para que m�s 
+                                        <p style="text-align: justify; color: #FFF">Contribuir a diseñar un Uruguay más justo, integrado, abierto al mundo 
+                                            y con políticas públicas cada vez más sofisticadas, para que más 
                                             personas vivan mejor.</p>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
                             <i class="fa fa-search icono" aria-hidden="true" style="color: #FFF"></i>
                             <br>
                             <br>
-                            La pol�tica p�blica basada en evidencia
+                            La política pública basada en evidencia
                         </div>
 <!--                        <div class="single-brand" style="color: #FFF">
                             <img src="assets/slider/iconos_desarrollo sostenible.png" style="max-width: 150px;" alt="">
@@ -195,7 +195,7 @@
                     <div class="col-xl-8">
                         <div class="about-title text-center mb-70">
                             <!--<h2>CREEMOS EN:</h2>-->
-                            <h5>Si quer�s conocer m�s sobre CEPP no dudes en contactarnos</h5>
+                            <h5>Si querés conocer más sobre CEPP no dudes en contactarnos</h5>
 
                             <div class="hero-slider-btn" >
                                             <a data-animation="fadeInLeft" data-delay=".6s" href="contacto.jsp" class="bt-btn btn-h-white" style="background: #79162E; color:#FFF ">CONTACTO > </a>
