@@ -7,8 +7,9 @@ ENV JAVA_OPTS="-Dcom.sun.management.disableContainerSupport=true"
 # Eliminar aplicaciones por defecto
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copiar WAR como ROOT
-COPY dist/CEPP.war /usr/local/tomcat/webapps/ROOT.war
+# Copiar WAR y archivos web
+COPY dist/CEPP.war /tmp/CEPP.war
+COPY web/ /tmp/web-updates/
 
 # Railway ignora EXPOSE, pero lo dejamos
 EXPOSE 8080
@@ -20,6 +21,12 @@ set -e\n\
 if [ -z "$PORT" ]; then\n\
   export PORT=8080\n\
 fi\n\
+# Descomprimir WAR y copiar archivos actualizados\n\
+mkdir -p /usr/local/tomcat/webapps/ROOT\n\
+cd /usr/local/tomcat/webapps/ROOT\n\
+unzip -q /tmp/CEPP.war\n\
+# Copiar archivos web actualizados (sobrescribe archivos del WAR)\n\
+cp -r /tmp/web-updates/* .\n\
 # Modificar server.xml en tiempo de ejecución con el puerto correcto\n\
 # Primero restaurar si tiene ${PORT} literal, luego reemplazar 8080\n\
 sed -i "s/port=\"\\${PORT}\"/port=\"8080\"/g" /usr/local/tomcat/conf/server.xml\n\
