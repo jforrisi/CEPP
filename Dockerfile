@@ -11,6 +11,9 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY dist/CEPP.war /tmp/CEPP.war
 COPY web/ /tmp/web-updates/
 
+# Instalar unzip si no está disponible
+RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
+
 # Railway ignora EXPOSE, pero lo dejamos
 EXPOSE 8080
 
@@ -24,9 +27,14 @@ fi\n\
 # Descomprimir WAR y copiar archivos actualizados\n\
 mkdir -p /usr/local/tomcat/webapps/ROOT\n\
 cd /usr/local/tomcat/webapps/ROOT\n\
-unzip -q /tmp/CEPP.war\n\
-# Copiar archivos web actualizados (sobrescribe archivos del WAR)\n\
-cp -r /tmp/web-updates/* .\n\
+unzip -qo /tmp/CEPP.war\n\
+# Copiar TODOS los archivos web actualizados (sobrescribe archivos del WAR)\n\
+echo \"Copiando archivos web actualizados...\"\n\
+cp -rf /tmp/web-updates/* .\n\
+# Verificar que informes7.jpg esté presente\n\
+echo \"Verificando archivos...\"\n\
+ls -la assets/informes/informes7.jpg 2>/dev/null && echo \"✅ informes7.jpg encontrado\" || echo \"❌ WARNING: informes7.jpg NO encontrado\"\n\
+ls -la assets/informes/ | head -10\n\
 # Modificar server.xml en tiempo de ejecución con el puerto correcto\n\
 # Primero restaurar si tiene ${PORT} literal, luego reemplazar 8080\n\
 sed -i "s/port=\"\\${PORT}\"/port=\"8080\"/g" /usr/local/tomcat/conf/server.xml\n\
