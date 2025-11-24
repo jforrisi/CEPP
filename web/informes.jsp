@@ -16,8 +16,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">An·lisis rigurosos para comprender la realidad</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secciÛn encontrar·s nuestros estudios de coyuntura, investigaciones sectoriales y an·lisis sobre las principales polÌticas p˙blicas, programas y problem·ticas nacionales, siempre en di·logo con su contexto regional y global.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">AnÔøΩlisis rigurosos para comprender la realidad</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secciÔøΩn encontrarÔøΩs nuestros estudios de coyuntura, investigaciones sectoriales y anÔøΩlisis sobre las principales polÔøΩticas pÔøΩblicas, programas y problemÔøΩticas nacionales, siempre en diÔøΩlogo con su contexto regional y global.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -32,6 +32,26 @@
         <section class="blog-area pt-100 pb-60">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            
+                            <div class="postbox__thumb">
+                                <a href="#">
+                                    <img src="assets/informes/informes7.png" alt="blog image">
+                                </a>
+                            </div>
+                                <div class="postbox__text p-30">
+                                    <h3 class="blog-title blog-title-sm">
+                                        <a href="https://drive.google.com/file/d/12PYJ_3fMcTQbFBg1cMvruwt5S1LOLiVE/view"
+                                          target="_blank" >INFORME SECTORIAL: ARGENTINA: LA ECONOM√çA DE MILEI Y SU IMPACTO EN URUGUAY</a>
+                                    </h3>
+                                    <div class="post-text">
+                                        <p>Noviembre 2025</p>                                    
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    
                     <div class="col-lg-4 col-md-6">
                         <article class="postbox post format-image mb-40">
                             
@@ -66,7 +86,7 @@
                                           target="_blank" >INFORME ESPECIAL: PERSPECTIVAS ECONOMICAS DEL FMI</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>øHacia dÛnde va la economÌa?</p>                                    
+                                        <p>ÔøΩHacia dÔøΩnde va la economÔøΩa?</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -104,7 +124,7 @@
                                           target="_blank" >INFORME SECTORIAL: MERCADO DE TRABAJO</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>An·lisis del mercado a septiembre 2025</p>                                    
+                                        <p>AnÔøΩlisis del mercado a septiembre 2025</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -123,7 +143,7 @@
                                           target="_blank" >INFORME SECTORIAL: PRINCIPALES COMMODITIES</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>An·lisis del mercado a agosto 2025</p>                                    
+                                        <p>AnÔøΩlisis del mercado a agosto 2025</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -141,7 +161,7 @@
                                       target="_blank" >INFORME SECTORIAL: SECTOR CARNICO</a>
                                 </h3>
                                 <div class="post-text">
-                                    <p>An·lisis del desempeÒo sectorial a agosto 2025</p>                                    
+                                    <p>AnÔøΩlisis del desempeÔøΩo sectorial a agosto 2025</p>                                    
                                 </div>
                             </div>
                         </article>
