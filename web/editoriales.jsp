@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+﻿<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : editoriales
     Created on : 18-sep-2025, 19:32:41
@@ -17,8 +17,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Opiniones para enriquecer el debate p�blico</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aqu� publicamos art�culos y columnas de analistas, referentes pol�ticos, sociales, econ�micos y empresariales sobre temas nacionales, regionales y globales. Cada editorial refleja exclusivamente la visi�n personal de su autor, contribuyendo a un debate plural y diverso.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Opiniones para enriquecer el debate público</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquí publicamos artículos y columnas de analistas, referentes políticos, sociales, económicos y empresariales sobre temas nacionales, regionales y globales. Cada editorial refleja exclusivamente la visión personal de su autor, contribuyendo a un debate plural y diverso.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1TjqMdbr4ArUYizkth1Of0uPvRnYdl_Xe/view" target="_blank">Andr�s Silva - Hacia una pol�tica p�blica de "buen uso" de la IA en educaci�n.</a>
+                                    <a href="https://drive.google.com/file/d/1TjqMdbr4ArUYizkth1Of0uPvRnYdl_Xe/view" target="_blank">Andrés Silva - Hacia una política pública de "buen uso" de la IA en educación.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1IfeLUtQynW9u1JD2upH4D1-KVDQvzjGZ/view" target="_blank">Mart�n Mattos - El riego como oportunidad para el pa�s.</a>
+                                    <a href="https://drive.google.com/file/d/1IfeLUtQynW9u1JD2upH4D1-KVDQvzjGZ/view" target="_blank">Antonio Manzi - Pobreza infantil: nuevas herramientas para un viejo problema.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -84,7 +84,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1Ieq6iKbzgDK2TtYFrCj_y5KhawjaX2BC/view" target="_blank">Mart�n Mattos - El riego como oportunidad para el pa�s.</a>
+                                    <a href="https://drive.google.com/file/d/1Ieq6iKbzgDK2TtYFrCj_y5KhawjaX2BC/view" target="_blank">Martín Mattos - El riego como oportunidad para el país.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NdkuGKLTi7Cm8IXDpwLMQQv5HrsbleGi/view" target="_blank">Eliana Gonz�lez - La pol�tica uruguaya en redes sociales: Un desaf�o para la deliberaci�n.</a>
+                                    <a href="https://drive.google.com/file/d/1NdkuGKLTi7Cm8IXDpwLMQQv5HrsbleGi/view" target="_blank">Eliana González - La política uruguaya en redes sociales: Un desafío para la deliberación.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -112,7 +112,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: �D�nde estamos y qu� hemos logrado?</a>
+                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: Â¿DÃ³nde estamos y quÃ© hemos logrado?</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -126,7 +126,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1ojI4aJqo15tpFOA--DRKNqUZgBNBGj1N/view" target="_blank">A. Trenchi - Uruguay ante un sector energ�tico cada vez m�s pragm�tico.</a>
+                                    <a href="https://drive.google.com/file/d/1ojI4aJqo15tpFOA--DRKNqUZgBNBGj1N/view" target="_blank">A. Trenchi - Uruguay ante un sector energético cada vez más pragmático.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -140,7 +140,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1SONKcu1nrw_9D0umr5HEE8HClssznTdC/view" target="_blank">R. Rodriguez - Pol�tica de datos y bienestar: hacia un marco regulatorio de la eonocm�a digital.</a>
+                                    <a href="https://drive.google.com/file/d/1SONKcu1nrw_9D0umr5HEE8HClssznTdC/view" target="_blank">R. Rodriguez - Política de datos y bienestar: hacia un marco regulatorio de la economía digital.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -238,4 +238,7 @@
         </section>
         
         <jsp:include page="footer.jsp"></jsp:include>
+
+
+
 
