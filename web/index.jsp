@@ -84,7 +84,7 @@
                                         <i class="fa fa-lightbulb-o" aria-hidden="true" style="font-size: 125px; color: #FFF"></i>
                                     </div>
                                     <div class="testi-author-desination-2">
-                                        <h4 style="color: #FFF">Nuestra visi�n</h4>
+                                        <h4 style="color: #FFF">Nuestra visión</h4>
                                         <p style="text-align: justify; color: #FFF">Contribuir a diseñar un Uruguay más justo, integrado, abierto al mundo 
                                             y con políticas públicas cada vez más sofisticadas, para que más 
                                             personas vivan mejor.</p>
