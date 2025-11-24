@@ -1,4 +1,4 @@
-﻿<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%-- 
     Document   : editoriales
     Created on : 18-sep-2025, 19:32:41
@@ -56,7 +56,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NgMQSBf6awrLypRFU_kdqdShQWj40uC5/view" target="_blank">Germ�n Aguirrezabala - El departamento n�mero 20.</a>
+                                    <a href="https://drive.google.com/file/d/1NgMQSBf6awrLypRFU_kdqdShQWj40uC5/view" target="_blank">Germán Aguirrezabala - El departamento número 20.</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -112,7 +112,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: Â¿DÃ³nde estamos y quÃ© hemos logrado?</a>
+                                    <a href="https://drive.google.com/file/d/1NdgVp_FnIy7kfhn-d6xhxjCGFxH8gZxR/view" target="_blank">J. P. Nieto - Uruguay conectado: ¿Dónde estamos y qué hemos logrado?</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -154,7 +154,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1BkFSLViVRbUVnkCmXuyrNAS3qkkXDW--/view" target="_blank">A. Stipanicic - Las patolog�as en el gobierno de las empresas p�blicas</a>
+                                    <a href="https://drive.google.com/file/d/1BkFSLViVRbUVnkCmXuyrNAS3qkkXDW--/view" target="_blank">A. Stipanicic - Las patologías en el gobierno de las empresas públicas</a>
                                 </h3>                               
                             </div>
                         </article>
@@ -238,7 +238,4 @@
         </section>
         
         <jsp:include page="footer.jsp"></jsp:include>
-
-
-
 
