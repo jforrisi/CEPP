@@ -18,8 +18,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Nuestra voz en la agenda p�blica</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secci�n reunimos entrevistas y participaciones en televisi�n, radio, prensa escrita y medios digitales de los principales referentes del CEPP. Un espacio para acceder de primera mano a c�mo aportamos al debate nacional y regional desde distintas plataformas.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Nuestra voz en la agenda pública</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta sección reunimos entrevistas y participaciones en televisión, radio, prensa escrita y medios digitales de los principales referentes del CEPP. Un espacio para acceder de primera mano a cómo aportamos al debate nacional y regional desde distintas plataformas.</p>
                                         </div>                                        
                                     </div>
                                 </div>
