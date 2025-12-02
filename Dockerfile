@@ -8,7 +8,7 @@ ENV JAVA_OPTS="-Dcom.sun.management.disableContainerSupport=true"
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copiar WAR y archivos web
-COPY dist/CEPP.war /tmp/CEPP.war
+COPY dist/ROOT.war /tmp/CEPP.war
 COPY web/ /tmp/web-updates/
 
 # Instalar unzip si no está disponible
