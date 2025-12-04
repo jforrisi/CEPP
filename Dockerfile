@@ -4,12 +4,20 @@ FROM tomcat:9.0.80-jdk17 AS builder
 # Desactivar container support que rompe Tomcat en Railway
 ENV JAVA_OPTS="-Dcom.sun.management.disableContainerSupport=true"
 
-# Instalar Ant para compilar
-RUN apt-get update && apt-get install -y ant && rm -rf /var/lib/apt/lists/*
+# Instalar Ant y wget para descargar librerías
+RUN apt-get update && apt-get install -y ant wget && rm -rf /var/lib/apt/lists/*
 
 # Copiar código fuente
 WORKDIR /build
 COPY . .
+
+# Descargar librerías necesarias (javax.mail y javax.activation)
+RUN mkdir -p web/WEB-INF/lib && \
+    cd web/WEB-INF/lib && \
+    wget -q https://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar && \
+    wget -q https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.jar && \
+    echo "Librerías descargadas:" && \
+    ls -lh *.jar
 
 # Compilar el proyecto (genera dist/ROOT.war)
 # Primero intentar con build-simple.xml, si falla usar el WAR existente
