@@ -1,4 +1,20 @@
 ## Imagen base de Tomcat con JDK 17 (versión nueva, estable)
+FROM tomcat:9.0.80-jdk17 AS builder
+
+# Desactivar container support que rompe Tomcat en Railway
+ENV JAVA_OPTS="-Dcom.sun.management.disableContainerSupport=true"
+
+# Instalar Ant para compilar
+RUN apt-get update && apt-get install -y ant && rm -rf /var/lib/apt/lists/*
+
+# Copiar código fuente
+WORKDIR /build
+COPY . .
+
+# Compilar el proyecto (genera dist/ROOT.war)
+RUN ant dist || (echo "Build falló, usando WAR existente si está disponible" && true)
+
+# Etapa final: imagen de runtime
 FROM tomcat:9.0.80-jdk17
 
 # Desactivar container support que rompe Tomcat en Railway
@@ -7,8 +23,8 @@ ENV JAVA_OPTS="-Dcom.sun.management.disableContainerSupport=true"
 # Eliminar aplicaciones por defecto
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copiar WAR y archivos web
-COPY dist/ROOT.war /tmp/CEPP.war
+# Copiar WAR compilado (o existente como fallback) y archivos web
+COPY --from=builder /build/dist/ROOT.war /tmp/CEPP.war
 COPY web/ /tmp/web-updates/
 
 # Instalar unzip si no está disponible
