@@ -12,7 +12,11 @@
     <property name="dist.war" value="${dist.dir}/${war.name}"/>
     
     <!-- Classpath con las librerías necesarias -->
+    <!-- Usar librerías de Tomcat que ya están en la imagen -->
     <path id="compile.classpath">
+        <!-- Librerías de Tomcat -->
+        <fileset dir="/usr/local/tomcat/lib" includes="*.jar" erroronmissingdir="false"/>
+        <!-- Librerías del proyecto si existen -->
         <fileset dir="${web.dir}/WEB-INF/lib" includes="*.jar" erroronmissingdir="false"/>
         <pathelement path="${build.classes.dir}"/>
     </path>
