@@ -24,7 +24,7 @@
                             <h3 class="footer-title"> <i class="fa fa-phone" aria-hidden="true"></i> COMUNICATE</h3>
                             <div class="footer-menu">
                                 <ul style="color: #fff">
-                                        info@cepp.com.uy</a></li>
+                                        info@ceppuy.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-md-12">
                         <div class="footer-copyright">
-                            <p class="white-color" style="text-align: center">� 2024 Centro de pol�ticas p�blicas. Todos los derechos reservados.</p>
+                            <p class="white-color" style="text-align: center"> 2024 Centro de políticas públicas. Todos los derechos reservados.</p>
                         </div>
                     </div>
                 </div>

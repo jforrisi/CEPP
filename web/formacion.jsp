@@ -18,7 +18,7 @@
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
                                             <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Aprendizaje para transformar la realidad</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aqu� encontrar�s nuestra oferta de cursos de formaci�n, tanto los actuales como los ya realizados. Nos enfocamos en programas sobre pol�ticas p�blicas, administraci�n p�blica y pensamiento pol�tico y econ�mico, con el objetivo de generar capacidades para la acci�n y el an�lisis cr�tico.</p>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Aquí encontrarás nuestra oferta de cursos de formación, tanto los actuales como los ya realizados. Nos enfocamos en programas sobre políticas públicas, administración pública y pensamiento político y económico, con el objetivo de generar capacidades para la acción y el análisis crítico.</p>
                                         </div>                                        
                                     </div>
                                 </div>

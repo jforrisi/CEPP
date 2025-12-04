@@ -19,7 +19,7 @@
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
                                             <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Conversaciones que inspiran y generan propuestas</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Un espacio de streaming donde dialogamos con expertos en pol�ticas p�blicas, referentes acad�micos y pol�ticos sobre programas, proyectos de ley y temas de actualidad. Un lugar para intercambiar ideas, analizar desaf�os y pensar juntos el futuro.</p>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">Un espacio de streaming donde dialogamos con expertos en políticas públicas, referentes académicos y políticos sobre programas, proyectos de ley y temas de actualidad. Un lugar para intercambiar ideas, analizar desafíos y pensar juntos el futuro.</p>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -45,10 +45,10 @@
                                 <div class="postbox__text p-30">
                                     <h3 class="blog-title blog-title-sm">
                                         <a href="https://www.youtube.com/watch?v=wSd6vIpvpgM&t=14s"
-                                          target="_blank" > Bruno Gili sobre Uruguay Innova, el programa del gobierno para coordinar el ecosistema de Ciencia, Tecnolog�a e Innovaci�n.</a>
+                                          target="_blank" > Bruno Gili sobre Uruguay Innova, el programa del gobierno para coordinar el ecosistema de Ciencia, Tecnología e Innovación.</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>En este nuevo episodio del streaming del CEPP entrevistamos a Bruno Gili, quien fuera designado por el gobierno de Yamand� Orsi para liderar el Programa "Uruguay Innova". </p>                                    
+                                        <p>En este nuevo episodio del streaming del CEPP entrevistamos a Bruno Gili, quien fuera designado por el gobierno de Yamandú Orsi para liderar el Programa "Uruguay Innova". </p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -64,11 +64,11 @@
                                 <div class="postbox__text p-30">
                                     <h3 class="blog-title blog-title-sm">
                                         <a href="https://www.youtube.com/watch?v=uVXhHRT8rN8&t=248s"
-                                          target="_blank" > Diego Sanjurjo sobre la seguridad p�blica, el narcotr�fico y el sistema penitenciario.
+                                          target="_blank" > Diego Sanjurjo sobre la seguridad pública, el narcotráfico y el sistema penitenciario.
 </a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>En el segundo episodio del CEPP+: Ideas para pensar entrevistamos a Diego Sanjurjo, actual gerente del AECA en el Ministerio del Interior, sobre el estado de la seguridad p�blica, el narcotr�fico y el sistema penitenciario.</p>                                    
+                                        <p>En el segundo episodio del CEPP+: Ideas para pensar entrevistamos a Diego Sanjurjo, actual gerente del AECA en el Ministerio del Interior, sobre el estado de la seguridad pública, el narcotráfico y el sistema penitenciario.</p>                                    
                                     </div>
                                 </div>
                         </article>
@@ -84,10 +84,10 @@
                                 <div class="postbox__text p-30">
                                     <h3 class="blog-title blog-title-sm">
                                         <a href="https://www.youtube.com/watch?v=mxgxwZLampI&t=5s"
-                                          target="_blank" >Episodio 1 - CEPP+ Ideas para Pensar: Universidad Nacional de la Educaci�n (UNED).</a>
+                                          target="_blank" >Episodio 1 - CEPP+ Ideas para Pensar: Universidad Nacional de la Educación (UNED).</a>
                                     </h3>
                                     <div class="post-text">
-                                        <p>Primer episodio del espacio del Centro de Estudios de Pol�ticas P�blicas (CEPP) "Ideas Para Pensar".</p>                                    
+                                        <p>Primer episodio del espacio del Centro de Estudios de Políticas Públicas (CEPP) "Ideas Para Pensar".</p>                                    
                                     </div>
                                 </div>
                         </article>

@@ -1,204 +1,104 @@
-x<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="cepp.genericos.SendMail"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="java.io.StringWriter"%>
-<%-- 
-    Document   : envioEmail
-    Created on : 09-may-2019, 21:50:53
-    Author     : Patricio Paulino
---%>
-
 <%
-    // Logging inmediato al inicio
+    // Logging inicial
     System.out.println("=== INICIO envioEmail.jsp ===");
-    System.out.flush();
     
-    try {
-        System.out.println("Importando SendMail...");
-        System.out.flush();
-%>
-<%@page import="cepp.genericos.SendMail"%>
-<%
-        System.out.println("SendMail importado correctamente");
-        System.out.flush();
-    } catch (Exception importEx) {
-        System.out.println("ERROR al importar SendMail: " + importEx.getMessage());
-        importEx.printStackTrace();
-        System.out.flush();
-        throw importEx;
-    }
-
     String nombre = "";
     String email = "";
-    String asunto = "Mensaje de la pagina de Agroayui";
-    String mensaje = "";    
-    String asuntoEnvio = "";    
-    String telefono = "";   
-    String xTipoEmail="N";
-    String xMensaje="";
+    String asunto = "Mensaje desde CEPP";
+    String mensaje = "";
+    String asuntoEnvio = "";
+    String telefono = "";
+    String xTipoEmail = "M";
     
-    System.out.println("Request method: " + request.getMethod());
-    System.out.println("Content type: " + request.getContentType());
-    System.out.flush();
-
-    try
-    {        
-        System.out.println("Entrando al try block...");
-        //Obtengo parametros
-        System.out.println("Leyendo parámetros...");
-        System.out.println("Request encoding: " + request.getCharacterEncoding());
-        System.out.println("Content type: " + request.getContentType());
-        
-        // Listar todos los parámetros recibidos
-        java.util.Enumeration<String> paramNames = request.getParameterNames();
-        System.out.println("Todos los parámetros recibidos:");
-        while (paramNames.hasMoreElements()) {
-            String paramName = paramNames.nextElement();
-            String paramValue = request.getParameter(paramName);
-            System.out.println("  - " + paramName + " = " + (paramValue != null ? paramValue.substring(0, Math.min(50, paramValue.length())) : "null"));
+    try {
+        // Leer parámetros del formulario
+        if (request.getParameter("xNombre") != null) {
+            nombre = request.getParameter("xNombre").trim();
+        }
+        if (request.getParameter("xEmail") != null) {
+            email = request.getParameter("xEmail").trim();
+        }
+        if (request.getParameter("xMensaje") != null) {
+            mensaje = request.getParameter("xMensaje").trim();
+        }
+        if (request.getParameter("xTelefono") != null) {
+            telefono = request.getParameter("xTelefono").trim();
+        }
+        if (request.getParameter("xAsunto") != null) {
+            asuntoEnvio = request.getParameter("xAsunto").trim();
+        }
+        if (request.getParameter("xTipoEmail") != null) {
+            xTipoEmail = request.getParameter("xTipoEmail").trim();
         }
         
-        if(request.getParameter("xNombre")!=null) nombre = request.getParameter("xNombre");
-        if(request.getParameter("xEmail")!=null)email = request.getParameter("xEmail");
-        if(request.getParameter("xMensaje")!=null) mensaje = request.getParameter("xMensaje");
-        if(request.getParameter("xTelefono")!=null) telefono = request.getParameter("xTelefono");
-        if(request.getParameter("xAsunto")!=null) asuntoEnvio = request.getParameter("xAsunto");
-        if(request.getParameter("xTipoEmail")!=null) xTipoEmail = request.getParameter("xTipoEmail");
-                
-        System.out.println("Parámetros procesados:");
-        System.out.println("  - nombre: " + nombre);
-        System.out.println("  - email: " + email);
-        System.out.println("  - telefono: " + telefono);
-        System.out.println("  - asunto: " + asuntoEnvio);
-        System.out.println("  - xTipoEmail: " + xTipoEmail);
-        
-        // Asegurar que asunto no sea null
-        if (asunto == null || asunto.trim().isEmpty()) {
-            asunto = "Mensaje de la pagina de CEPP";
+        // Validar campos requeridos
+        if (nombre.isEmpty()) {
+            throw new Exception("El nombre es requerido");
+        }
+        if (email.isEmpty()) {
+            throw new Exception("El email es requerido");
+        }
+        if (mensaje.isEmpty()) {
+            throw new Exception("El mensaje es requerido");
         }
         
-        if(xTipoEmail != null && xTipoEmail.equals("N")){
-            
-            // Asegurar que email no sea null
-            if (email == null) email = "";
-            
-            xMensaje = "Mensaje perteneciente a la pagina de agroayui.com, en la seccion de compras y ventas.\n"
-                    + " El email ingresado fue el siguiente: " + email;
-            
-            System.out.println("Enviando email tipo N...");
-            System.out.println("Asunto: " + asunto);
-            SendMail.EnviadorMail(asunto, xMensaje);
-            
+        // Construir mensaje del email
+        StringBuilder cuerpoEmail = new StringBuilder();
+        cuerpoEmail.append("Nuevo mensaje desde el formulario de contacto de CEPP\n\n");
+        cuerpoEmail.append("Asunto: ").append(asuntoEnvio.isEmpty() ? "(Sin asunto)" : asuntoEnvio).append("\n");
+        cuerpoEmail.append("Nombre: ").append(nombre).append("\n");
+        cuerpoEmail.append("Email: ").append(email).append("\n");
+        cuerpoEmail.append("Teléfono: ").append(telefono.isEmpty() ? "(No proporcionado)" : telefono).append("\n");
+        cuerpoEmail.append("Mensaje:\n").append(mensaje);
+        
+        // Enviar email
+        System.out.println("Enviando email...");
+        SendMail.EnviadorMail(asunto, cuerpoEmail.toString());
+        System.out.println("Email enviado exitosamente");
+        
+        // Mostrar mensaje de éxito
 %>
-            <script>
-                document.getElementById("mensaje").style.display = "block";
-                var element = document.getElementById("mensaje");
-                element.classList.remove("error_message");
-                element.classList.add("succes_message");
-                document.getElementById("mensaje").innerHTML = "Email enviado satisfactoriamente!";            
-
-                $('#emailNewsletter').val('');
-            </script>
+<script>
+    document.getElementById("message").style.display = "block";
+    var element = document.getElementById("message");
+    element.classList.remove("error_message");
+    element.classList.add("succes_message");
+    element.innerHTML = "Mensaje enviado con éxito!";
+    
+    // Limpiar formulario
+    $('#name').val('');
+    $('#email').val('');
+    $('#subject').val('');
+    $('#phone').val('');
+    $('#comments').val('');
+</script>
 <%
-        }else if(xTipoEmail != null && xTipoEmail.equals("M")){
-            
-            System.out.println("Procesando email tipo M (contacto)...");
-            
-            // Asegurar que las variables no sean null antes de concatenar
-            if (nombre == null) nombre = "";
-            if (email == null) email = "";
-            if (telefono == null) telefono = "";
-            if (asuntoEnvio == null) asuntoEnvio = "";
-            if (mensaje == null) mensaje = "";
-            
-            xMensaje = "Mensaje perteneciente a la pagina de cepp.com, en la seccion de contacto.\n "
-                    + "\n Asunto: " + asuntoEnvio
-                    + "\n Envia: " + nombre
-                    + "\n Email: " + email 
-                    + "\n Telefono: " + telefono 
-                    + "\n Mensaje: " + mensaje;                  
-
-            System.out.println("Mensaje construido, llamando a SendMail.EnviadorMail()...");
-            System.out.println("Asunto: " + asunto);
-            System.out.println("Mensaje (primeros 100 chars): " + (xMensaje.length() > 100 ? xMensaje.substring(0, 100) : xMensaje));
-            try {
-                SendMail.EnviadorMail(asunto, xMensaje);
-                System.out.println("Email enviado exitosamente!");
-%>
-            <script>
-
-                document.getElementById("message").style.display = "block";
-                var element = document.getElementById("message");
-                element.classList.remove("error_message");
-                element.classList.add("succes_message");
-                document.getElementById("message").innerHTML = "Mensaje enviado con exito!";                                   
-
-                $('#name').val('');
-                $('#email').val('');
-                $('#subject').val('');
-                $('#phone').val('');
-                $('#comments').val('');
-            </script>
-<%
-            } catch (Exception emailEx) {
-                System.out.println("ERROR en try interno de SendMail: " + emailEx.getMessage());
-                System.out.println("Stack trace:");
-                emailEx.printStackTrace();
-                throw emailEx; // Relanzar para que se capture en el catch general
-            }
-<%
-        } else {
-            // xTipoEmail no es "N" ni "M"
-            System.out.println("ERROR: xTipoEmail tiene un valor inesperado: '" + xTipoEmail + "'");
-            throw new Exception("Tipo de email no reconocido: " + xTipoEmail);
-        }                        
-    }
-    catch(Exception ex)
-    {
-        // Log del error para debugging
-        System.out.println("=== ERROR CAPTURADO en envioEmail.jsp ===");
-        System.out.println("Mensaje: " + ex.getMessage());
-        System.out.println("Tipo de excepción: " + ex.getClass().getName());
-        System.out.println("Stack trace completo:");
+    } catch (Exception ex) {
+        // Log del error
+        System.err.println("ERROR en envioEmail.jsp: " + ex.getMessage());
         ex.printStackTrace();
         
-        // También escribir el stack trace completo a un string
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw);
-        ex.printStackTrace(pw);
-        String stackTrace = sw.toString();
-        System.out.println("Stack trace string: " + stackTrace);
-        System.out.println("=== FIN ERROR ===");
-        System.out.flush();
-        
-        // Obtener mensaje de error más descriptivo
-        String errorMessage = ex.getMessage();
-        if (errorMessage == null || errorMessage.isEmpty()) {
-            errorMessage = "Error desconocido: " + ex.getClass().getName();
+        // Mostrar mensaje de error
+        String errorMsg = ex.getMessage();
+        if (errorMsg == null || errorMsg.isEmpty()) {
+            errorMsg = "Error desconocido al enviar el mensaje";
         }
-        
-        // Limpiar el mensaje para JavaScript (escapar comillas y saltos de línea)
-        String cleanMessage = errorMessage.replace("'", "\\'").replace("\n", " ").replace("\r", " ");
-        
-        %><script>
-            var errorMsg = 'Mensaje no enviado. ';
-            <% if (ex.getMessage() != null) { %>
-                <% if (ex.getMessage().contains("no configurado")) { %>
-                    errorMsg += 'Error de configuración: <%= cleanMessage %>';
-                <% } else if (ex.getMessage().contains("Error al enviar email")) { %>
-                    errorMsg += '<%= cleanMessage %>';
-                <% } else { %>
-                    errorMsg += 'Error: <%= cleanMessage %>';
-                <% } %>
-            <% } else { %>
-                errorMsg += 'Error desconocido. Verifique los logs del servidor.';
-            <% } %>
-            document.getElementById("message").style.display = "block";
-            var element = document.getElementById("message");
-            element.classList.remove("succes_message");
-            element.classList.add("error_message");
-            element.innerHTML = errorMsg;
-            console.error("Error en envioEmail:", <%= ex.getMessage() != null ? "'" + cleanMessage + "'" : "null" %>);
-        </script><%
+        // Escapar comillas para JavaScript
+        errorMsg = errorMsg.replace("'", "\\'").replace("\n", " ");
+%>
+<script>
+    document.getElementById("message").style.display = "block";
+    var element = document.getElementById("message");
+    element.classList.remove("succes_message");
+    element.classList.add("error_message");
+    element.innerHTML = 'Error: <%= errorMsg %>';
+    console.error("Error al enviar email:", '<%= errorMsg %>');
+</script>
+<%
     }
 %>
 
