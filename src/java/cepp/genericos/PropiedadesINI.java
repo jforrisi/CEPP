@@ -47,7 +47,13 @@ public class PropiedadesINI
                 throw new Exception("#alerta: Atenci&oacute;n, la variable de entorno no existe.");
             }
 
-            streamArchivo = new FileInputStream(iniFile);
+            System.out.println("Intentando abrir archivo: " + iniFile);
+            File file = new File(iniFile);
+            if (!file.exists()) {
+                throw new java.io.FileNotFoundException("Archivo CEPP.ini no encontrado en: " + file.getAbsolutePath());
+            }
+            
+            streamArchivo = new FileInputStream(file);
             properties.load(streamArchivo);
             retorno = properties.getProperty(xVariable);
             
@@ -58,21 +64,39 @@ public class PropiedadesINI
         }
         catch (java.io.FileNotFoundException ex)
         {
+            // Cerrar stream si se abrió antes de la excepción
+            if (streamArchivo != null) {
+                try {
+                    streamArchivo.close();
+                } catch (Exception e) {
+                    // Ignorar error al cerrar
+                }
+            }
             // Si el archivo no existe, verificar si es una propiedad crítica
             throw new Exception("Archivo CEPP.ini no encontrado y variable de entorno '" + xVariable + "' no configurada. " +
                               "Configura las variables de entorno en Railway o crea el archivo CEPP.ini");
         }
         catch (Exception ex)
         {
-            throw new Exception("Error al leer propiedad '" + xVariable + "': " + ex.getMessage());
-        }
-        finally
-        {
+            // Cerrar stream si se abrió antes de la excepción
             if (streamArchivo != null) {
                 try {
                     streamArchivo.close();
                 } catch (Exception e) {
                     // Ignorar error al cerrar
+                }
+            }
+            throw new Exception("Error al leer propiedad '" + xVariable + "': " + ex.getMessage());
+        }
+        finally
+        {
+            // Asegurar que el stream se cierre siempre
+            if (streamArchivo != null) {
+                try {
+                    streamArchivo.close();
+                    streamArchivo = null; // Marcar como cerrado
+                } catch (Exception e) {
+                    System.out.println("Error al cerrar stream (ignorado): " + e.getMessage());
                 }
             }
         }
