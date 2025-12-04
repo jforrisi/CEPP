@@ -263,7 +263,7 @@ function replaceParametros(xParametros)
 
     } else {       
         document.getElementById("message").innerHTML = "";        
-        javascript:cargaAjax('envioEmail.jsp', 'contentEnvioMail', 
+        javascript:cargaAjax('envioEmailSimple.jsp', 'contentEnvioMail', 
                 '&xNombre=' + contact_name.value + 
                 '&xMensaje=' + contact_msg.value + 
                 '&xAsunto=' + contact_subject.value + 
