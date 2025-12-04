@@ -24,4 +24,15 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
+    <!-- REDIRECCIÓN DE ceppuy.org A ceppuy.com -->
+    <filter>
+        <filter-name>DomainRedirectFilter</filter-name>
+        <filter-class>cepp.genericos.DomainRedirectFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>DomainRedirectFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
