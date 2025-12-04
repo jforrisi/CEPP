@@ -45,6 +45,18 @@
         System.out.println("Entrando al try block...");
         //Obtengo parametros
         System.out.println("Leyendo parámetros...");
+        System.out.println("Request encoding: " + request.getCharacterEncoding());
+        System.out.println("Content type: " + request.getContentType());
+        
+        // Listar todos los parámetros recibidos
+        java.util.Enumeration<String> paramNames = request.getParameterNames();
+        System.out.println("Todos los parámetros recibidos:");
+        while (paramNames.hasMoreElements()) {
+            String paramName = paramNames.nextElement();
+            String paramValue = request.getParameter(paramName);
+            System.out.println("  - " + paramName + " = " + (paramValue != null ? paramValue.substring(0, Math.min(50, paramValue.length())) : "null"));
+        }
+        
         if(request.getParameter("xNombre")!=null) nombre = request.getParameter("xNombre");
         if(request.getParameter("xEmail")!=null)email = request.getParameter("xEmail");
         if(request.getParameter("xMensaje")!=null) mensaje = request.getParameter("xMensaje");
@@ -52,7 +64,7 @@
         if(request.getParameter("xAsunto")!=null) asuntoEnvio = request.getParameter("xAsunto");
         if(request.getParameter("xTipoEmail")!=null) xTipoEmail = request.getParameter("xTipoEmail");
                 
-        System.out.println("Parámetros leídos:");
+        System.out.println("Parámetros procesados:");
         System.out.println("  - nombre: " + nombre);
         System.out.println("  - email: " + email);
         System.out.println("  - telefono: " + telefono);
@@ -134,18 +146,34 @@
         System.out.println("=== FIN ERROR ===");
         System.out.flush();
         
+        // Obtener mensaje de error más descriptivo
+        String errorMessage = ex.getMessage();
+        if (errorMessage == null || errorMessage.isEmpty()) {
+            errorMessage = "Error desconocido: " + ex.getClass().getName();
+        }
+        
+        // Limpiar el mensaje para JavaScript (escapar comillas y saltos de línea)
+        String cleanMessage = errorMessage.replace("'", "\\'").replace("\n", " ").replace("\r", " ");
+        
         %><script>
             var errorMsg = 'Mensaje no enviado. ';
-            <% if (ex.getMessage() != null && ex.getMessage().contains("no configurado")) { %>
-                errorMsg += 'Error de configuración: <%= ex.getMessage().replace("'", "\\'") %>';
+            <% if (ex.getMessage() != null) { %>
+                <% if (ex.getMessage().contains("no configurado")) { %>
+                    errorMsg += 'Error de configuración: <%= cleanMessage %>';
+                <% } else if (ex.getMessage().contains("Error al enviar email")) { %>
+                    errorMsg += '<%= cleanMessage %>';
+                <% } else { %>
+                    errorMsg += 'Error: <%= cleanMessage %>';
+                <% } %>
             <% } else { %>
-                errorMsg += 'Verifique sus datos o contacte al administrador.';
+                errorMsg += 'Error desconocido. Verifique los logs del servidor.';
             <% } %>
             document.getElementById("message").style.display = "block";
             var element = document.getElementById("message");
             element.classList.remove("succes_message");
             element.classList.add("error_message");
             element.innerHTML = errorMsg;
+            console.error("Error en envioEmail:", <%= ex.getMessage() != null ? "'" + cleanMessage + "'" : "null" %>);
         </script><%
     }
 %>
