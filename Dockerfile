@@ -12,7 +12,12 @@ WORKDIR /build
 COPY . .
 
 # Compilar el proyecto (genera dist/ROOT.war)
-RUN ant dist || (echo "Build falló, usando WAR existente si está disponible" && true)
+RUN echo "=== Iniciando build con Ant ===" && \
+    ant dist && \
+    echo "=== Build completado ===" && \
+    ls -lh dist/ROOT.war && \
+    echo "=== Verificando que el WAR existe ===" && \
+    test -f dist/ROOT.war || (echo "ERROR: WAR no generado" && exit 1)
 
 # Etapa final: imagen de runtime
 FROM tomcat:9.0.80-jdk17
