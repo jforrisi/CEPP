@@ -49,6 +49,8 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copiar WAR compilado (o existente como fallback) y archivos web
 COPY --from=builder /build/dist/ROOT.war /tmp/CEPP.war
 COPY web/ /tmp/web-updates/
+# Nota: CEPP.ini está en .gitignore, por lo que no se copiará desde GitHub
+# En Railway, configura las variables de entorno: EmailFrom, EmailTo, Contrasenia
 
 # Instalar unzip si no está disponible
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
