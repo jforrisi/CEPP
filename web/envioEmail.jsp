@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+x<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="java.io.StringWriter"%>
 <%-- 
@@ -71,11 +71,21 @@
         System.out.println("  - asunto: " + asuntoEnvio);
         System.out.println("  - xTipoEmail: " + xTipoEmail);
         
-        if(xTipoEmail.equals("N")){
+        // Asegurar que asunto no sea null
+        if (asunto == null || asunto.trim().isEmpty()) {
+            asunto = "Mensaje de la pagina de CEPP";
+        }
+        
+        if(xTipoEmail != null && xTipoEmail.equals("N")){
+            
+            // Asegurar que email no sea null
+            if (email == null) email = "";
             
             xMensaje = "Mensaje perteneciente a la pagina de agroayui.com, en la seccion de compras y ventas.\n"
                     + " El email ingresado fue el siguiente: " + email;
             
+            System.out.println("Enviando email tipo N...");
+            System.out.println("Asunto: " + asunto);
             SendMail.EnviadorMail(asunto, xMensaje);
             
 %>
@@ -89,17 +99,27 @@
                 $('#emailNewsletter').val('');
             </script>
 <%
-        }else if(xTipoEmail.equals("M")){
+        }else if(xTipoEmail != null && xTipoEmail.equals("M")){
             
             System.out.println("Procesando email tipo M (contacto)...");
+            
+            // Asegurar que las variables no sean null antes de concatenar
+            if (nombre == null) nombre = "";
+            if (email == null) email = "";
+            if (telefono == null) telefono = "";
+            if (asuntoEnvio == null) asuntoEnvio = "";
+            if (mensaje == null) mensaje = "";
+            
             xMensaje = "Mensaje perteneciente a la pagina de cepp.com, en la seccion de contacto.\n "
-                    + "\n Asunto: "+asuntoEnvio
-                    + "\n Envia: "+nombre
-                    + "\n Email: "+email 
-                    + "\n Telefono: "+telefono 
-                    + "\n Mensaje: "+mensaje;                  
+                    + "\n Asunto: " + asuntoEnvio
+                    + "\n Envia: " + nombre
+                    + "\n Email: " + email 
+                    + "\n Telefono: " + telefono 
+                    + "\n Mensaje: " + mensaje;                  
 
             System.out.println("Mensaje construido, llamando a SendMail.EnviadorMail()...");
+            System.out.println("Asunto: " + asunto);
+            System.out.println("Mensaje (primeros 100 chars): " + (xMensaje.length() > 100 ? xMensaje.substring(0, 100) : xMensaje));
             try {
                 SendMail.EnviadorMail(asunto, xMensaje);
                 System.out.println("Email enviado exitosamente!");
@@ -126,6 +146,10 @@
                 throw emailEx; // Relanzar para que se capture en el catch general
             }
 <%
+        } else {
+            // xTipoEmail no es "N" ni "M"
+            System.out.println("ERROR: xTipoEmail tiene un valor inesperado: '" + xTipoEmail + "'");
+            throw new Exception("Tipo de email no reconocido: " + xTipoEmail);
         }                        
     }
     catch(Exception ex)
