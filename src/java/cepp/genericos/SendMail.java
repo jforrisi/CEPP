@@ -21,10 +21,19 @@ public class SendMail {
     public static void EnviadorMail(String asunto, String cuerpo) {
 
         try {
+            System.out.println("Iniciando envío de email...");
             // Obtener las propiedades del correo
+            System.out.println("Leyendo EmailFrom...");
             final String xEmailDesde = PropiedadesINI.getPropiedad("EmailFrom");
+            System.out.println("EmailFrom leído: " + xEmailDesde);
+            
+            System.out.println("Leyendo EmailTo...");
             final String xEmailTo = PropiedadesINI.getPropiedad("EmailTo");
+            System.out.println("EmailTo leído: " + xEmailTo);
+            
+            System.out.println("Leyendo Contrasenia...");
             final String xContrasena = PropiedadesINI.getPropiedad("Contrasenia");
+            System.out.println("Contrasenia leída: ***");
             
             // Validar que las propiedades no estén vacías
             if (xEmailDesde == null || xEmailDesde.trim().isEmpty()) {

@@ -27,7 +27,9 @@ public class PropiedadesINI
     {
         // Primero intentar leer de variables de entorno
         String envValue = System.getenv(xVariable);
+        System.out.println("Buscando variable de entorno '" + xVariable + "': " + (envValue != null ? "encontrada" : "no encontrada"));
         if (envValue != null && !envValue.trim().isEmpty()) {
+            System.out.println("Variable '" + xVariable + "' leída de entorno: " + (xVariable.equals("Contrasenia") ? "***" : envValue));
             return envValue;
         }
         
