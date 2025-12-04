@@ -13,7 +13,7 @@
     
     <!-- Classpath con las librerías necesarias -->
     <path id="compile.classpath">
-        <fileset dir="${web.dir}/WEB-INF/lib" includes="*.jar" if="lib.exists"/>
+        <fileset dir="${web.dir}/WEB-INF/lib" includes="*.jar" erroronmissingdir="false"/>
         <pathelement path="${build.classes.dir}"/>
     </path>
     
