@@ -48,15 +48,30 @@ public class PropiedadesINI
             streamArchivo = new FileInputStream(iniFile);
             properties.load(streamArchivo);
             retorno = properties.getProperty(xVariable);
+            
+            // Si no se encontró en el archivo, lanzar excepción
+            if (retorno == null || retorno.trim().isEmpty()) {
+                throw new Exception("Propiedad '" + xVariable + "' no encontrada en CEPP.ini ni en variables de entorno");
+            }
+        }
+        catch (java.io.FileNotFoundException ex)
+        {
+            // Si el archivo no existe, verificar si es una propiedad crítica
+            throw new Exception("Archivo CEPP.ini no encontrado y variable de entorno '" + xVariable + "' no configurada. " +
+                              "Configura las variables de entorno en Railway o crea el archivo CEPP.ini");
         }
         catch (Exception ex)
         {
-            throw new Exception(ex.getMessage());
+            throw new Exception("Error al leer propiedad '" + xVariable + "': " + ex.getMessage());
         }
         finally
         {
             if (streamArchivo != null) {
-                streamArchivo.close();
+                try {
+                    streamArchivo.close();
+                } catch (Exception e) {
+                    // Ignorar error al cerrar
+                }
             }
         }
         return retorno;

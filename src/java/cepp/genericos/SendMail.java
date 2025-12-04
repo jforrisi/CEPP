@@ -25,6 +25,17 @@ public class SendMail {
             final String xEmailDesde = PropiedadesINI.getPropiedad("EmailFrom");
             final String xEmailTo = PropiedadesINI.getPropiedad("EmailTo");
             final String xContrasena = PropiedadesINI.getPropiedad("Contrasenia");
+            
+            // Validar que las propiedades no estén vacías
+            if (xEmailDesde == null || xEmailDesde.trim().isEmpty()) {
+                throw new Exception("EmailFrom no configurado. Configura la variable de entorno EmailFrom o el archivo CEPP.ini");
+            }
+            if (xEmailTo == null || xEmailTo.trim().isEmpty()) {
+                throw new Exception("EmailTo no configurado. Configura la variable de entorno EmailTo o el archivo CEPP.ini");
+            }
+            if (xContrasena == null || xContrasena.trim().isEmpty()) {
+                throw new Exception("Contrasenia no configurado. Configura la variable de entorno Contrasenia o el archivo CEPP.ini");
+            }
 
             Properties props = new Properties();
             props.put("mail.smtp.auth", "true");
