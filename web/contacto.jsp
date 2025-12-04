@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-box phone-icon mb-30">
-                                        <input type="text" name="phone" id="phone" placeholder="Tel�fono">
+                                        <input type="text" name="phone" id="phone" placeholder="Teléfono">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
