@@ -63,13 +63,31 @@ set -e\n\
 if [ -z "$PORT" ]; then\n\
   export PORT=8080\n\
 fi\n\
+# Validar que el WAR existe y no está corrupto\n\
+echo \"Validando WAR...\"\n\
+if [ ! -f /tmp/CEPP.war ]; then\n\
+  echo \"ERROR: WAR no encontrado en /tmp/CEPP.war\"\n\
+  exit 1\n\
+fi\n\
+# Verificar que es un archivo ZIP válido\n\
+if ! unzip -t /tmp/CEPP.war > /dev/null 2>&1; then\n\
+  echo \"ERROR: WAR corrupto o inválido\"\n\
+  exit 1\n\
+fi\n\
+echo \"WAR válido, descomprimiendo...\"\n\
 # Descomprimir WAR y copiar archivos actualizados\n\
 mkdir -p /usr/local/tomcat/webapps/ROOT\n\
 cd /usr/local/tomcat/webapps/ROOT\n\
-unzip -qo /tmp/CEPP.war\n\
+# Usar unzip con opciones más permisivas para evitar errores de zip bomb\n\
+unzip -qo /tmp/CEPP.war || {\n\
+  echo \"ERROR al descomprimir WAR\"\n\
+  exit 1\n\
+}\n\
 # Copiar TODOS los archivos web actualizados (sobrescribe archivos del WAR)\n\
 echo \"Copiando archivos web actualizados...\"\n\
-cp -rf /tmp/web-updates/* .\n\
+if [ -d /tmp/web-updates ]; then\n\
+  cp -rf /tmp/web-updates/* .\n\
+fi\n\
 # Verificar que informes7.jpg esté presente\n\
 echo \"Verificando archivos...\"\n\
 ls -la assets/informes/informes7.jpg 2>/dev/null && echo \"✅ informes7.jpg encontrado\" || echo \"❌ WARNING: informes7.jpg NO encontrado\"\n\
