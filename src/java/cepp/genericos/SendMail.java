@@ -18,7 +18,7 @@ import javax.activation.FileDataSource;
  */
 public class SendMail {
 
-    public static void EnviadorMail(String asunto, String cuerpo) {
+    public static void EnviadorMail(String asunto, String cuerpo) throws Exception {
 
         try {
             System.out.println("Iniciando envío de email...");
