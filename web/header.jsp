@@ -24,8 +24,8 @@
     <meta property="og:description" content="El Centro de Estudios de Políticas Públicas es una organización sin fines de lucro
                                     que se dedica a la investigación y el diseño de políticas públicas basadas en
                                     evidencia." />
-    <meta property="og:image" content="https://www.ceppuy.com/CEPP/assets/cepp/favicon.png" />
-    <meta property="og:url" content="https://www.ceppuy.com/CEPP/" />
+    <meta property="og:image" content="https://ceppuy.com/assets/cepp/favicon.png" />
+    <meta property="og:url" content="https://ceppuy.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="CEPP - Centro de Estudios de Políticas Públicas" />
 
