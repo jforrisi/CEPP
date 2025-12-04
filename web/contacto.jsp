@@ -19,8 +19,8 @@
                                 <div class="col-xl-7 col-lg-8 col-md-10">
                                     <div class="hero-text" style="color: #FFF">
                                         <div class="hero-slider-caption ">
-                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Conect� con el CEPP</h1>
-                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta secci�n encontrar�s nuestras v�as de comunicaci�n: correo electr�nico, suscripci�n a newsletters y otros canales para mantenerte al d�a con las novedades del centro. Un espacio abierto para estar en contacto e intercambiar ideas.</p>
+                                            <h1 data-animation="fadeInUp" data-delay=".4s" style="color: #FFF">Conecta con el CEPP</h1>
+                                           <p data-animation="fadeInUp" data-delay=".6s" style="color: #FFF">En esta sección encontrarás nuestras vías de comunicación: correo electrónico, suscripción a newsletters y otros canales para mantenerte al día con las novedades del centro. Un espacio abierto para estar en contacto e intercambiar ideas.</p>
                                         </div>                                        
                                     </div>
                                 </div>
