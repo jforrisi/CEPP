@@ -18,12 +18,20 @@ public class PropiedadesINI
     /**
      * Lee un archivo ini tomando la ubicacion por una variable de entorno
      * y devuelve un valor el cual esta referenciado por la propiedad recibida.
+     * Primero intenta leer de variables de entorno, si no existe, lee del archivo.
      *
      * @param xVariable
      * @return
      */
     public static String getPropiedad(String xVariable) throws Exception
     {
+        // Primero intentar leer de variables de entorno
+        String envValue = System.getenv(xVariable);
+        if (envValue != null && !envValue.trim().isEmpty()) {
+            return envValue;
+        }
+        
+        // Si no existe en variables de entorno, leer del archivo
         Properties properties = new Properties();
         String retorno = null;
         FileInputStream streamArchivo = null;
@@ -47,7 +55,9 @@ public class PropiedadesINI
         }
         finally
         {
-            streamArchivo.close();
+            if (streamArchivo != null) {
+                streamArchivo.close();
+            }
         }
         return retorno;
     }
