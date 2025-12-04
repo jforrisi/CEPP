@@ -17,12 +17,15 @@
     String xTipoEmail="N";
     String xMensaje="";
     
-    System.out.println("viene aca");
+    System.out.println("=== INICIO envioEmail.jsp ===");
+    System.out.println("Request method: " + request.getMethod());
+    System.out.println("Content type: " + request.getContentType());
 
     try
     {        
-    System.out.println("pasa");
+        System.out.println("Entrando al try block...");
         //Obtengo parametros
+        System.out.println("Leyendo parámetros...");
         if(request.getParameter("xNombre")!=null) nombre = request.getParameter("xNombre");
         if(request.getParameter("xEmail")!=null)email = request.getParameter("xEmail");
         if(request.getParameter("xMensaje")!=null) mensaje = request.getParameter("xMensaje");
@@ -30,8 +33,12 @@
         if(request.getParameter("xAsunto")!=null) asuntoEnvio = request.getParameter("xAsunto");
         if(request.getParameter("xTipoEmail")!=null) xTipoEmail = request.getParameter("xTipoEmail");
                 
-        
-        System.out.println("el email que viene es"+email);
+        System.out.println("Parámetros leídos:");
+        System.out.println("  - nombre: " + nombre);
+        System.out.println("  - email: " + email);
+        System.out.println("  - telefono: " + telefono);
+        System.out.println("  - asunto: " + asuntoEnvio);
+        System.out.println("  - xTipoEmail: " + xTipoEmail);
         
         if(xTipoEmail.equals("N")){
             
@@ -53,6 +60,7 @@
 <%
         }else if(xTipoEmail.equals("M")){
             
+            System.out.println("Procesando email tipo M (contacto)...");
             xMensaje = "Mensaje perteneciente a la pagina de cepp.com, en la seccion de contacto.\n "
                     + "\n Asunto: "+asuntoEnvio
                     + "\n Envia: "+nombre
@@ -60,8 +68,10 @@
                     + "\n Telefono: "+telefono 
                     + "\n Mensaje: "+mensaje;                  
 
+            System.out.println("Mensaje construido, llamando a SendMail.EnviadorMail()...");
             try {
                 SendMail.EnviadorMail(asunto, xMensaje);
+                System.out.println("Email enviado exitosamente!");
 %>
             <script>
 
@@ -79,7 +89,8 @@
             </script>
 <%
             } catch (Exception emailEx) {
-                System.out.println("Error al enviar email: " + emailEx.getMessage());
+                System.out.println("ERROR en try interno de SendMail: " + emailEx.getMessage());
+                System.out.println("Stack trace:");
                 emailEx.printStackTrace();
                 throw emailEx; // Relanzar para que se capture en el catch general
             }
@@ -89,8 +100,12 @@
     catch(Exception ex)
     {
         // Log del error para debugging
-        System.out.println("ERROR en envioEmail.jsp: " + ex.getMessage());
+        System.out.println("=== ERROR CAPTURADO en envioEmail.jsp ===");
+        System.out.println("Mensaje: " + ex.getMessage());
+        System.out.println("Tipo de excepción: " + ex.getClass().getName());
+        System.out.println("Stack trace completo:");
         ex.printStackTrace();
+        System.out.println("=== FIN ERROR ===");
         
         %><script>
             var errorMsg = 'Mensaje no enviado. ';
