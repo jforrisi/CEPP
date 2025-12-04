@@ -67,8 +67,11 @@ public class SendMail {
             Transport.send(msg);
             System.out.println("Email enviado con éxito");
         } catch (Exception mex) {
-            System.out.println("Exception: " + mex);
+            System.out.println("Exception en EnviadorMail: " + mex.getMessage());
+            mex.printStackTrace();
             Logger.getLogger(SendMail.class.getName()).log(Level.SEVERE, null, mex);
+            // Relanzar la excepción para que se maneje en el JSP
+            throw new Exception("Error al enviar email: " + mex.getMessage(), mex);
         }
     
     }

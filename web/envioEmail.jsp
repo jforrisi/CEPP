@@ -60,7 +60,8 @@
                     + "\n Telefono: "+telefono 
                     + "\n Mensaje: "+mensaje;                  
 
-            SendMail.EnviadorMail(asunto, xMensaje);
+            try {
+                SendMail.EnviadorMail(asunto, xMensaje);
 %>
             <script>
 
@@ -77,12 +78,32 @@
                 $('#comments').val('');
             </script>
 <%
+            } catch (Exception emailEx) {
+                System.out.println("Error al enviar email: " + emailEx.getMessage());
+                emailEx.printStackTrace();
+                throw emailEx; // Relanzar para que se capture en el catch general
+            }
+<%
         }                        
     }
     catch(Exception ex)
     {
+        // Log del error para debugging
+        System.out.println("ERROR en envioEmail.jsp: " + ex.getMessage());
+        ex.printStackTrace();
+        
         %><script>
-            javascript: showMensaje('Mensaje no enviado, verifique sus datos', 'error');
+            var errorMsg = 'Mensaje no enviado. ';
+            <% if (ex.getMessage() != null && ex.getMessage().contains("no configurado")) { %>
+                errorMsg += 'Error de configuración: <%= ex.getMessage() %>';
+            <% } else { %>
+                errorMsg += 'Verifique sus datos o contacte al administrador.';
+            <% } %>
+            document.getElementById("message").style.display = "block";
+            var element = document.getElementById("message");
+            element.classList.remove("succes_message");
+            element.classList.add("error_message");
+            element.innerHTML = errorMsg;
         </script><%
     }
 %>
