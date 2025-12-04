@@ -24,7 +24,9 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- REDIRECCIÓN DE ceppuy.org A ceppuy.com -->
+    <!-- REDIRECCIÓN DE ceppuy.org A ceppuy.com - DESHABILITADO (causa problemas) -->
+    <!-- Usar Page Rules de Cloudflare en su lugar -->
+    <!--
     <filter>
         <filter-name>DomainRedirectFilter</filter-name>
         <filter-class>cepp.genericos.DomainRedirectFilter</filter-class>
@@ -35,5 +37,6 @@
         <url-pattern>/*</url-pattern>
         <dispatcher>REQUEST</dispatcher>
     </filter-mapping>
+    -->
 
 </web-app>
