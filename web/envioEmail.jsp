@@ -63,11 +63,18 @@
         // Mostrar mensaje de éxito
 %>
 <script>
-    document.getElementById("message").style.display = "block";
-    var element = document.getElementById("message");
-    element.classList.remove("error_message");
-    element.classList.add("succes_message");
-    element.innerHTML = "Mensaje enviado con éxito!";
+    var messageElement = document.getElementById("message");
+    messageElement.style.display = "block";
+    messageElement.classList.remove("error_message");
+    messageElement.classList.add("succes_message");
+    
+    // Mensaje elegante y destacado
+    messageElement.innerHTML = '<div style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 20px 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3); margin: 15px 0; text-align: center; animation: slideIn 0.3s ease-out;">' +
+        '<div style="font-size: 48px; margin-bottom: 10px;">✓</div>' +
+        '<div style="font-size: 20px; font-weight: 600; margin-bottom: 8px; letter-spacing: 0.5px;">¡Mensaje enviado exitosamente!</div>' +
+        '<div style="font-size: 15px; opacity: 0.95; line-height: 1.5;">Tu mensaje ha sido recibido y nos contactaremos contigo a la brevedad.</div>' +
+        '</div>' +
+        '<style>@keyframes slideIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }</style>';
     
     // Limpiar formulario
     $('#name').val('');
