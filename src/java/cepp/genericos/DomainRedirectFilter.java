@@ -25,28 +25,35 @@ public class DomainRedirectFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpServletResponse httpResponse = (HttpServletResponse) response;
-        
-        String host = httpRequest.getHeader("Host");
-        String requestURI = httpRequest.getRequestURI();
-        String queryString = httpRequest.getQueryString();
-        
-        // Redirigir si el dominio es ceppuy.org o www.ceppuy.org
-        if (host != null && (host.equals("ceppuy.org") || host.equals("www.ceppuy.org"))) {
-            // Construir la URL de destino
-            String redirectURL = "https://ceppuy.com" + requestURI;
-            if (queryString != null && !queryString.isEmpty()) {
-                redirectURL += "?" + queryString;
-            }
+        try {
+            HttpServletRequest httpRequest = (HttpServletRequest) request;
+            HttpServletResponse httpResponse = (HttpServletResponse) response;
             
-            // Redirección permanente (301)
-            httpResponse.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);
-            httpResponse.setHeader("Location", redirectURL);
-            return;
+            String host = httpRequest.getHeader("Host");
+            
+            // Solo redirigir si el dominio es ceppuy.org o www.ceppuy.org
+            if (host != null && (host.equals("ceppuy.org") || host.equals("www.ceppuy.org"))) {
+                String requestURI = httpRequest.getRequestURI();
+                String queryString = httpRequest.getQueryString();
+                
+                // Construir la URL de destino
+                String redirectURL = "https://ceppuy.com" + requestURI;
+                if (queryString != null && !queryString.isEmpty()) {
+                    redirectURL += "?" + queryString;
+                }
+                
+                // Redirección permanente (301)
+                httpResponse.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);
+                httpResponse.setHeader("Location", redirectURL);
+                httpResponse.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+                return;
+            }
+        } catch (Exception e) {
+            // Si hay algún error, continuar normalmente para no romper la aplicación
+            System.err.println("Error en DomainRedirectFilter: " + e.getMessage());
         }
         
-        // Si no es ceppuy.org, continuar normalmente
+        // Si no es ceppuy.org o hay error, continuar normalmente
         chain.doFilter(request, response);
     }
 
