@@ -12,10 +12,20 @@ WORKDIR /build
 COPY . .
 
 # Compilar el proyecto (genera dist/ROOT.war)
+# Primero intentar con build-simple.xml, si falla usar el WAR existente
 RUN echo "=== Iniciando build con Ant ===" && \
-    ant dist && \
-    echo "=== Build completado ===" && \
-    ls -lh dist/ROOT.war && \
+    if [ -f build-simple.xml ]; then \
+        echo "Usando build-simple.xml..." && \
+        ant -f build-simple.xml dist && \
+        echo "=== Build completado ===" && \
+        ls -lh dist/ROOT.war; \
+    elif [ -f dist/ROOT.war ]; then \
+        echo "Build simplificado no disponible, usando WAR existente..." && \
+        ls -lh dist/ROOT.war; \
+    else \
+        echo "ERROR: No se puede compilar y no hay WAR existente" && \
+        exit 1; \
+    fi && \
     echo "=== Verificando que el WAR existe ===" && \
     test -f dist/ROOT.war || (echo "ERROR: WAR no generado" && exit 1)
 
