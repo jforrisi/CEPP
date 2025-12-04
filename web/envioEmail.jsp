@@ -1,13 +1,32 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.io.StringWriter"%>
 <%-- 
     Document   : envioEmail
     Created on : 09-may-2019, 21:50:53
     Author     : Patricio Paulino
 --%>
 
-<%@page import="cepp.genericos.SendMail"%>
-
 <%
+    // Logging inmediato al inicio
+    System.out.println("=== INICIO envioEmail.jsp ===");
+    System.out.flush();
+    
+    try {
+        System.out.println("Importando SendMail...");
+        System.out.flush();
+%>
+<%@page import="cepp.genericos.SendMail"%>
+<%
+        System.out.println("SendMail importado correctamente");
+        System.out.flush();
+    } catch (Exception importEx) {
+        System.out.println("ERROR al importar SendMail: " + importEx.getMessage());
+        importEx.printStackTrace();
+        System.out.flush();
+        throw importEx;
+    }
+
     String nombre = "";
     String email = "";
     String asunto = "Mensaje de la pagina de Agroayui";
@@ -17,9 +36,9 @@
     String xTipoEmail="N";
     String xMensaje="";
     
-    System.out.println("=== INICIO envioEmail.jsp ===");
     System.out.println("Request method: " + request.getMethod());
     System.out.println("Content type: " + request.getContentType());
+    System.out.flush();
 
     try
     {        
@@ -105,12 +124,20 @@
         System.out.println("Tipo de excepción: " + ex.getClass().getName());
         System.out.println("Stack trace completo:");
         ex.printStackTrace();
+        
+        // También escribir el stack trace completo a un string
+        StringWriter sw = new StringWriter();
+        PrintWriter pw = new PrintWriter(sw);
+        ex.printStackTrace(pw);
+        String stackTrace = sw.toString();
+        System.out.println("Stack trace string: " + stackTrace);
         System.out.println("=== FIN ERROR ===");
+        System.out.flush();
         
         %><script>
             var errorMsg = 'Mensaje no enviado. ';
             <% if (ex.getMessage() != null && ex.getMessage().contains("no configurado")) { %>
-                errorMsg += 'Error de configuración: <%= ex.getMessage() %>';
+                errorMsg += 'Error de configuración: <%= ex.getMessage().replace("'", "\\'") %>';
             <% } else { %>
                 errorMsg += 'Verifique sus datos o contacte al administrador.';
             <% } %>
