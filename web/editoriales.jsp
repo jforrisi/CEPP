@@ -37,6 +37,20 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/16.stipanicic.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1NEXJQjGes3hcqLQ3zUMcLHEuX5TdGNse/view" target="_blank">Alejandro Stipanicic: La ética en la era de la descarbonización.</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/15.intrioni.png" alt="blog image">
                                 </a>
                             </div>
