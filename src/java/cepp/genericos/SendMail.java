@@ -19,20 +19,24 @@ public class SendMail {
     public static void enviarEmail(String asunto, String cuerpo) throws Exception {
         try {
             // Leer configuración desde variables de entorno o CEPP.ini
-            String emailFrom = PropiedadesINI.getPropiedad("EmailFrom");
+            String emailFromTemp = PropiedadesINI.getPropiedad("EmailFrom");
             String emailTo = PropiedadesINI.getPropiedad("EmailTo");
-            String contrasenia = PropiedadesINI.getPropiedad("Contrasenia");
+            String contraseniaTemp = PropiedadesINI.getPropiedad("Contrasenia");
             
             // Validar configuración
-            if (emailFrom == null || emailFrom.trim().isEmpty()) {
+            if (emailFromTemp == null || emailFromTemp.trim().isEmpty()) {
                 throw new Exception("EmailFrom no configurado");
             }
             if (emailTo == null || emailTo.trim().isEmpty()) {
                 throw new Exception("EmailTo no configurado");
             }
-            if (contrasenia == null || contrasenia.trim().isEmpty()) {
+            if (contraseniaTemp == null || contraseniaTemp.trim().isEmpty()) {
                 throw new Exception("Contrasenia no configurada");
             }
+            
+            // Crear variables finales para usar en clase interna
+            final String emailFrom = emailFromTemp;
+            final String contrasenia = contraseniaTemp;
             
             // Configurar propiedades SMTP de Gmail
             Properties props = new Properties();
