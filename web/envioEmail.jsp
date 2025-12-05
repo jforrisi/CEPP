@@ -1,5 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="cepp.genericos.SendMailSimple"%>
+<%@page import="cepp.genericos.SendMail"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="java.io.StringWriter"%>
 <%
@@ -57,7 +57,7 @@
         
         // Enviar email
         System.out.println("Enviando email...");
-        SendMailSimple.enviarEmail(asunto, cuerpoEmail.toString());
+        SendMail.enviarEmail(asunto, cuerpoEmail.toString());
         System.out.println("Email enviado exitosamente");
         
         // Mostrar mensaje de éxito

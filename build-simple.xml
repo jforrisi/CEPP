@@ -13,6 +13,9 @@
     
     <!-- Classpath con las librerías -->
     <path id="compile.classpath">
+        <!-- Librerías de Tomcat (servlet-api, etc.) -->
+        <fileset dir="/usr/local/tomcat/lib" includes="*.jar" erroronmissingdir="false"/>
+        <!-- Librerías del proyecto -->
         <fileset dir="${web.dir}/WEB-INF/lib">
             <include name="*.jar"/>
         </fileset>

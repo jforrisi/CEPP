@@ -8,7 +8,7 @@ import java.util.Properties;
  * Versión simplificada de envío de emails usando Gmail SMTP
  * Usa las mismas variables de entorno: EmailFrom, EmailTo, Contrasenia
  */
-public class SendMailSimple {
+public class SendMail {
     
     /**
      * Envía un email usando Gmail SMTP
