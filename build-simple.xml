@@ -1,1 +1,66 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CEPP" default="dist" basedir=".">
+    <description>Build simplificado para CEPP</description>
+    
+    <!-- Propiedades -->
+    <property name="src.dir" value="src/java"/>
+    <property name="web.dir" value="web"/>
+    <property name="build.dir" value="build"/>
+    <property name="build.web.dir" value="${build.dir}/web"/>
+    <property name="build.classes.dir" value="${build.web.dir}/WEB-INF/classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="war.name" value="ROOT.war"/>
+    
+    <!-- Classpath con las librerías -->
+    <path id="compile.classpath">
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+    <!-- Limpiar build anterior -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+    
+    <!-- Inicializar directorios -->
+    <target name="init" depends="clean">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+    
+    <!-- Compilar código Java -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" 
+               destdir="${build.classes.dir}" 
+               source="1.7" 
+               target="1.7" 
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath refid="compile.classpath"/>
+        </javac>
+        <copy todir="${build.classes.dir}">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <!-- Copiar archivos web -->
+    <target name="copy-web" depends="compile">
+        <copy todir="${build.web.dir}">
+            <fileset dir="${web.dir}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <!-- Crear WAR -->
+    <target name="dist" depends="copy-web">
+        <war destfile="${dist.dir}/${war.name}" webxml="${build.web.dir}/WEB-INF/web.xml">
+            <fileset dir="${build.web.dir}"/>
+        </war>
+        <echo message="WAR creado: ${dist.dir}/${war.name}"/>
+    </target>
+</project>

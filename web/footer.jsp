@@ -21,16 +21,6 @@
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-3">
                         <div class="footer-widget mb-30">
-                            <h3 class="footer-title"> <i class="fa fa-phone" aria-hidden="true"></i> COMUNICATE</h3>
-                            <div class="footer-menu">
-                                <ul style="color: #fff">
-                                        info@ceppuy.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-3">
-                        <div class="footer-widget mb-30">
 <!--                            <h3 class="footer-title">VISITANOS</h3>
                             <div class="footer-menu">
                                 <ul>
