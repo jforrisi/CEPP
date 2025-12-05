@@ -49,15 +49,16 @@
         <copy todir="${build.dir}/web">
             <fileset dir="${web.dir}"/>
         </copy>
-        <!-- Asegurar que las clases compiladas estén en el lugar correcto -->
-        <copy todir="${build.dir}/web/WEB-INF/classes">
-            <fileset dir="${build.classes.dir}"/>
-        </copy>
     </target>
     
     <!-- Crear WAR -->
     <target name="dist" depends="copy-web">
         <mkdir dir="${dist.dir}"/>
+        <!-- Asegurar que las clases compiladas estén en el lugar correcto dentro de web -->
+        <copy todir="${build.dir}/web/WEB-INF/classes">
+            <fileset dir="${build.classes.dir}"/>
+        </copy>
+        <!-- Crear WAR de forma simple y correcta -->
         <war destfile="${dist.war}" 
              webxml="${web.dir}/WEB-INF/web.xml"
              basedir="${build.dir}/web"
