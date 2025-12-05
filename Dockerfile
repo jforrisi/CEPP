@@ -49,8 +49,6 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 # Copiar WAR compilado (o existente como fallback) y archivos web
 COPY --from=builder /build/dist/ROOT.war /tmp/CEPP.war
 COPY web/ /tmp/web-updates/
-# Nota: CEPP.ini está en .gitignore, por lo que no se copiará desde GitHub
-# En Railway, configura las variables de entorno: EmailFrom, EmailTo, Contrasenia
 
 # Instalar unzip si no está disponible
 RUN apt-get update && apt-get install -y unzip && rm -rf /var/lib/apt/lists/*
@@ -65,31 +63,13 @@ set -e\n\
 if [ -z "$PORT" ]; then\n\
   export PORT=8080\n\
 fi\n\
-# Validar que el WAR existe y no está corrupto\n\
-echo \"Validando WAR...\"\n\
-if [ ! -f /tmp/CEPP.war ]; then\n\
-  echo \"ERROR: WAR no encontrado en /tmp/CEPP.war\"\n\
-  exit 1\n\
-fi\n\
-# Verificar que es un archivo ZIP válido\n\
-if ! unzip -t /tmp/CEPP.war > /dev/null 2>&1; then\n\
-  echo \"ERROR: WAR corrupto o inválido\"\n\
-  exit 1\n\
-fi\n\
-echo \"WAR válido, descomprimiendo...\"\n\
 # Descomprimir WAR y copiar archivos actualizados\n\
 mkdir -p /usr/local/tomcat/webapps/ROOT\n\
 cd /usr/local/tomcat/webapps/ROOT\n\
-# Usar unzip con opciones más permisivas para evitar errores de zip bomb\n\
-unzip -qo /tmp/CEPP.war || {\n\
-  echo \"ERROR al descomprimir WAR\"\n\
-  exit 1\n\
-}\n\
+unzip -qo /tmp/CEPP.war\n\
 # Copiar TODOS los archivos web actualizados (sobrescribe archivos del WAR)\n\
 echo \"Copiando archivos web actualizados...\"\n\
-if [ -d /tmp/web-updates ]; then\n\
-  cp -rf /tmp/web-updates/* .\n\
-fi\n\
+cp -rf /tmp/web-updates/* .\n\
 # Verificar que informes7.jpg esté presente\n\
 echo \"Verificando archivos...\"\n\
 ls -la assets/informes/informes7.jpg 2>/dev/null && echo \"✅ informes7.jpg encontrado\" || echo \"❌ WARNING: informes7.jpg NO encontrado\"\n\

@@ -5,10 +5,10 @@ import javax.mail.internet.*;
 import java.util.Properties;
 
 /**
- * Envío de emails usando Gmail SMTP
- * Usa las variables de entorno: EmailFrom, EmailTo, Contrasenia
+ * Versión simplificada de envío de emails usando Gmail SMTP
+ * Usa las mismas variables de entorno: EmailFrom, EmailTo, Contrasenia
  */
-public class SendMail {
+public class SendMailSimple {
     
     /**
      * Envía un email usando Gmail SMTP
@@ -16,7 +16,7 @@ public class SendMail {
      * @param cuerpo Cuerpo del mensaje
      * @throws Exception Si hay algún error al enviar
      */
-    public static void EnviadorMail(String asunto, String cuerpo) throws Exception {
+    public static void enviarEmail(String asunto, String cuerpo) throws Exception {
         try {
             // Leer configuración desde variables de entorno o CEPP.ini
             String emailFrom = PropiedadesINI.getPropiedad("EmailFrom");
