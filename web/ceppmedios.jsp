@@ -36,7 +36,45 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <article class="postbox post format-image mb-40">
-                            
+ 
+                            <div class="postbox__thumb">
+                                <a href="#">
+                                    <img src="assets/medios/medios10.png" alt="blog image">
+                                </a>
+                            </div>
+                                <div class="postbox__text p-30">
+                                    <h3 class="blog-title blog-title-sm">
+                                        <a href="https://radiocarve.uy/probabilidad-de-hallar-petroleo-en-uruguay-aumento-considerablemente-y-expresidente-de-ancap-aseguro-que-el-pais-debe-prepararse-para-el-exito/"
+                                          target="_blank" >Petróleo en Uruguay.</a>
+                                    </h3>
+                                    <div class="post-text">
+                                        <p>Probabilidad de hallar petróleo en Uruguay “aumentó considerablemente” y expresidente de ANCAP aseguró que el país “debe prepararse para el éxito”.</p>                                    
+                                    </div>
+                                </div>
+                        </article>
+                    </div>                    
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+ 
+                            <div class="postbox__thumb">
+                                <a href="#">
+                                    <img src="assets/medios/medios9.png" alt="blog image">
+                                </a>
+                            </div>
+                                <div class="postbox__text p-30">
+                                    <h3 class="blog-title blog-title-sm">
+                                        <a href="https://enperspectiva.uy/en-perspectiva-programa/petroleo-mar-uruguayo-estado-alejandro-stipanicic-expresidente-ancap/"
+                                          target="_blank" >¿Petróleo en el mar uruguayo?.</a>
+                                    </h3>
+                                    <div class="post-text">
+                                        <p>El Estado debería estar preparándose por si se confirma; se necesita ya una agencia especializada, afirma Alejandro Stipanicic, expresidente de Ancap.</p>                                    
+                                    </div>
+                                </div>
+                        </article>
+                    </div>                    
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+ 
                             <div class="postbox__thumb">
                                 <a href="#">
                                     <img src="assets/medios/medios8.png" alt="blog image">
@@ -122,7 +160,7 @@
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
                                     <a href="https://enperspectiva.uy/en-perspectiva-programa/entrevista-central/coincidencias-programaticas-entre-los-partidos-politicos-en-la-campana-electoral-cuales-son-que-grado-de-acuerdo-existe-con-victoria-pasquet-y-joaquin-forrisi-integrantes-del-cepp-que/"
-                                     target="_blank"  >Coincidencias programáticas entre los partidos políticos en la campa-a electoral</a>
+                                     target="_blank"  >Coincidencias programáticas entre los partidos políticos en la campaña electoral</a>
                                 </h3>
                                 <div class="post-text">
                                     <p>¿Cuáles son? ¿Qué grado de acuerdo existe? Con Victoria Pasquet y Joaquín Forrisi, 
@@ -162,7 +200,7 @@
                                      target="_blank"  >"Uruguay debe tomar en serio la eventualidad de un yacimiento petrolero y estar preparado como país", dijo Alejandro Stipanicic</a>
                                 </h3>
                                 <div class="post-text">
-<!--                                    <p>Di�logo abierto sobre el plebiscito en curso, abordando temas cruciales relacionados con la seguridad social.</p>                                    -->
+<!--                                    <p>Diálogo abierto sobre el plebiscito en curso, abordando temas cruciales relacionados con la seguridad social.</p>                                    -->
                                 </div>
                             </div>
                         </article>
