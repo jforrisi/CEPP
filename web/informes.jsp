@@ -38,7 +38,7 @@
                             
                             <div class="postbox__thumb">
                                 <a href="#">
-                                    <img src="assets/informes/informes8.jpg" alt="blog image">
+                                    <img src="assets/informes/informes8.png" alt="blog image">
                                 </a>
                             </div>
                                 <div class="postbox__text p-30">
