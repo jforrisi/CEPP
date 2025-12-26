@@ -37,6 +37,34 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/18.mattos.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/11yFm1AzcIh7Ajlu4IxV00UqdvwV7dDe5/view" target="_blank">Martín Mattos:Riego en Uruguay. Pasado, presente y futuro.</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
+                                    <img src="assets/editorial/17.nieto.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1hvY4FkrqDVHEXCvh-csGwB-2aAqPP2ls/view" target="_blank">Juan Pablo Nieto: Uruguay conectado. El entretenimiento como valor agregado.</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/16.stipanicic.png" alt="blog image">
                                 </a>
                             </div>
