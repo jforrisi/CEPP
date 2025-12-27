@@ -39,6 +39,25 @@
                             
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/ideas/episodio4.jpg" alt="blog image">
+                                </a>
+                            </div>
+                                <div class="postbox__text p-30">
+                                    <h3 class="blog-title blog-title-sm">
+                                        <a href="https://www.youtube.com/watch?v=sxHsScwIUxM&t=6s"
+                                          target="_blank" >Eduardo Blasina sobre la posibilidad de que Uruguay se vuelva un laboratorio de prueba de soluciones para el mundo.</a>
+                                    </h3>
+                                    <div class="post-text">
+                                        <p>Entrevista al Ing. Eduardo Blasina en base a su editorial sobre Uruguay como laboratorio de soluciones para el mundo.</p>                                    
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/ideas/episodio3.jpeg" alt="blog image">
                                 </a>
                             </div>
