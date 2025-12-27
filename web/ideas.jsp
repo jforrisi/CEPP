@@ -39,7 +39,7 @@
                             
                             <div class="postbox__thumb">
                                 <a href="#">
-                                    <img src="assets/ideas/episodio4.jpg" alt="blog image">
+                                    <img src="https://img.youtube.com/vi/sxHsScwIUxM/maxresdefault.jpg" alt="blog image">
                                 </a>
                             </div>
                                 <div class="postbox__text p-30">
