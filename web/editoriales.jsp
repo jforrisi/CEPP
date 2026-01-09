@@ -48,7 +48,6 @@
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                    <div class="col-lg-4 col-md-6">
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
