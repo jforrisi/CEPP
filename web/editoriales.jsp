@@ -37,6 +37,21 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/19.rodriguez.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1Wp_PNs7Gk2ax8L9G6HV9e6BWUiZ9RZyl/view" target="_blank">Rosina Rodriguez: Efectos menos visibles de los topes de tasas de interés.</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/18.mattos.png" alt="blog image">
                                 </a>
                             </div>
