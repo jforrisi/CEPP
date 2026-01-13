@@ -38,6 +38,25 @@
                             
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/informes/informes9.png" alt="blog image">
+                                </a>
+                            </div>
+                                <div class="postbox__text p-30">
+                                    <h3 class="blog-title blog-title-sm">
+                                        <a href="https://drive.google.com/file/d/1302seRgl7vTM5oLh8fwWSFyB7BOeRM8d/view"
+                                          target="_blank" >BARÓMETRO ENERGÉTICO: MERCADO DE COMBUSTIBLES</a>
+                                    </h3>
+                                    <div class="post-text">
+                                        <p>Diciembre 2025</p>                                    
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/informes/informes8.png" alt="blog image">
                                 </a>
                             </div>
