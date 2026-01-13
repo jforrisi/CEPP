@@ -43,8 +43,8 @@
                             </div>
                                 <div class="postbox__text p-30">
                                     <h3 class="blog-title blog-title-sm">
-                                        <a href="https://drive.google.com/file/d/1302seRgl7vTM5oLh8fwWSFyB7BOeRM8d/view"
-                                          target="_blank" >BARÓMETRO ENERGÉTICO: MERCADO DE COMBUSTIBLES</a>
+                                        <a href="https://drive.google.com/file/d/1TkDNzLv6ilu7yrYlKDBLja7OY2xEhzXh/view"
+                                          target="_blank">BARÓMETRO ENERGÉTICO: MERCADO DE COMBUSTIBLES</a>
                                     </h3>
                                     <div class="post-text">
                                         <p>Diciembre 2025</p>                                    
