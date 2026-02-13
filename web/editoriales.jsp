@@ -37,6 +37,20 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/21_veroslavky.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1dcea-vwxW0jbm4TEngUUlQA3gKamr4zp/view" target="_blank">¿TRANSICIÓN ENERGÉTICA? ¿CON PETRÓLEO? GERARDO VEROSLAVSKY</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/20.Trenchi.png" alt="blog image">
                                 </a>
                             </div>
