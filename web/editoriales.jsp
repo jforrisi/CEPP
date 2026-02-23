@@ -37,6 +37,20 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/22_gonzalez.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1eLP3kjJNRUfTHs7hW7G7M351vmhW7kF0/view" target="_blank">LA POLÍTICA DEL DESACUERDO EN TIEMPOS DE POLARIZACIÓN SILENCIOSA - ELIANA GONZALEZ SAN MARTIN</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/21_veroslavky.png" alt="blog image">
                                 </a>
                             </div>
