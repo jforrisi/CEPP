@@ -37,6 +37,20 @@
                         <article class="postbox post format-image mb-40">
                             <div class="postbox__thumb">
                                 <a href="#">
+                                    <img src="assets/editorial/23_tessore.png" alt="blog image">
+                                </a>
+                            </div>
+                            <div class="postbox__text p-30">
+                                <h3 class="blog-title blog-title-sm">
+                                    <a href="https://drive.google.com/file/d/1fW1ePCiEHS-OwWbro9HgZ37nvUqLTk-F/view" target="_blank">DEMOCRACIA EN APUROS - CARLOS TESSORE y CARLOS PETRELLA</a>
+                                </h3>                               
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="postbox post format-image mb-40">
+                            <div class="postbox__thumb">
+                                <a href="#">
                                     <img src="assets/editorial/22_gonzalez.png" alt="blog image">
                                 </a>
                             </div>
