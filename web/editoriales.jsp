@@ -42,7 +42,7 @@
                             </div>
                             <div class="postbox__text p-30">
                                 <h3 class="blog-title blog-title-sm">
-                                    <a href="https://drive.google.com/file/d/1yBOhH1pPNVZMLp40ml_3Z63PyKnT0I-U/view" target="_blank">Acuerdo interpartidario</a>
+                                    <a href="https://drive.google.com/file/d/1yBOhH1pPNVZMLp40ml_3Z63PyKnT0I-U/view" target="_blank">Acuerdos multipartidarios de energía: lo concretado y lo pendiente</a>
                                 </h3>                               
                             </div>
                         </article>
